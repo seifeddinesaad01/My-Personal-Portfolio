@@ -1,56 +1,50 @@
 /* Header.css */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .menu-icon {
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: none; /* Initially hidden on larger devices */
-  
-    /* Adjust as needed for your design */
-    @media (max-width: 768px) {
-      display: block; /* Display on medium and small devices */
-    }
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-links a:hover {
-    text-decoration: underline;
-  }
-  
-  .icons-wrapper {
-    display: flex;
-    gap: 1rem;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: nowrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+
   @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .nav-links {
-      margin-top: 1rem;
-    }
+    display: block;
   }
-  
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.3rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #f98484; /* Change the color when hovered over */
+}
+
+.icons-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    margin-top: 1rem;
+  }
+}
