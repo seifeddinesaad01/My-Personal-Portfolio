@@ -5,6 +5,7 @@
   align-items: center;
   padding: 1rem;
   flex-wrap: nowrap;
+  background-color: #efefef;
 }
 
 .logo {
@@ -26,6 +27,7 @@
   display: flex;
   gap: 2rem;
   font-size: 1.3rem;
+  font-weight: 600;
 }
 
 .nav-links a {
@@ -40,6 +42,8 @@
 
 .icons-wrapper {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -47,4 +51,19 @@
   .nav-links {
     margin-top: 1rem;
   }
+}
+
+.header_icons{
+  padding:  0.5rem ;
+  background-color: #ffff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_icons:hover{
+color:#f98484;
 }
