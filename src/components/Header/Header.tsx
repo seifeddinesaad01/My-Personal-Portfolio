@@ -47,15 +47,26 @@ const Header: React.FC = () => {
 
       <div className={isDrawerOpen? "drawer" : 'hiddenDrawer'}>
         <div className='drawer__header'>
-          <div className="logo">Logo</div>
-          <div onClick={()=> toggleDrawer()}><GiSkullCrossedBones/></div>
+          <div className="logo">SEIF</div>
+          <div onClick={()=> toggleDrawer()} style={{cursor:"pointer"}}><GiSkullCrossedBones/></div>
         </div>
 
         <nav className="drawer-links">
           {links.map((link, index) => {
-            return <NavLink to={link?.tag} onClick={toggleDrawer}>{link?.name}</NavLink>
+            return <NavLink className="active" to={link?.tag} onClick={toggleDrawer} >{link?.name}</NavLink>
           })}
         </nav>
+        <div className="icons-wrapper" style={{width:'100%'}}>
+            <span className="header_icons">
+              <FaInstagram />
+            </span>
+            <span className="header_icons">
+              <FaLinkedinIn />
+            </span>
+            <span className="header_icons">
+              <FaTwitter />
+            </span>
+          </div>
       </div>
 
     </header>

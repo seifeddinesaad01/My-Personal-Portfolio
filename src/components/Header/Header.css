@@ -36,7 +36,7 @@
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #f98484; /* Change the color when hovered over */
 }
 
@@ -82,6 +82,7 @@ color:#f98484;
   align-items: flex-end;
     transform: translateX(-100%);  
   transition:  0.3s ease-in-out;
+  border-right: 3px solid red;
 }
 
 .hiddenDrawer {
@@ -99,6 +100,8 @@ color:#f98484;
   align-items: flex-end;
     /* transform: translateX(-100%);   */
   transition:  0.3s ease-in-out;
+  border-right: 1px solid rgb(206, 202, 202);
+
 }
 .drawer__header{
   display: flex;
@@ -111,16 +114,26 @@ color:#f98484;
   display: flex;
   width: 100%;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  gap: 1rem;
   flex-direction: column;
 }
 
 .drawer-links a {
   text-decoration: none;
   margin: 0.5em 0;
-}
+  border-bottom: 2px solid #f98484;
+  width: 80%;
+  color: gray;
+  padding-bottom: 0.5rem;
 
+}
 /* Show the drawer when it's open */
 .drawer.open {
   transform: translateX(0);
+}
+
+.active {
+  color: red;
+  /* Add any other styles you want for the active link */
 }
