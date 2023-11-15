@@ -1,0 +1,16 @@
+.hero__section{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* background-color: red; */
+}
+.hero__left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
