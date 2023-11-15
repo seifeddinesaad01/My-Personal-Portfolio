@@ -1,39 +1,62 @@
-// Header.tsx
-import React from 'react';
-import './Header.css'; // Import the CSS file
+import React, { useState } from 'react';
+import './Header.css';
 import useWindow from '../../utils/useWindow';
 import { NavLink } from 'react-router-dom';
 import { links } from '../../data/constants';
-import { FaInstagram, FaLinkedinIn,FaTwitter} from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { GiSkullCrossedBones } from "react-icons/gi";
 
 const Header: React.FC = () => {
   const { width } = useWindow();
- 
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
   return (
     <header className="header">
       <div className="logo">Logo</div>
 
-      {/* Menu icon for medium and small devices */}
-
-      {width > 765 ?
+      {width > 765 ? (
         <>
           <nav className="nav-links">
-            {links.map((link, index)=>{
-              return  <NavLink to={link?.tag}>{link?.name}</NavLink>
+            {links.map((link, index) => {
+              return <NavLink to={link?.tag}>{link?.name}</NavLink>;
             })}
           </nav>
           <div className="icons-wrapper">
-            {/* You can replace these icons with your preferred icon components or images */}
-            <span className='header_icons'><FaInstagram /></span>
-            <span className='header_icons'><FaLinkedinIn /></span>
-            <span className='header_icons'><FaTwitter /></span>
+            <span className="header_icons">
+              <FaInstagram />
+            </span>
+            <span className="header_icons">
+              <FaLinkedinIn />
+            </span>
+            <span className="header_icons">
+              <FaTwitter />
+            </span>
           </div>
         </>
-        :
-        <div className="menu-icon">&#9776;</div>
-      }
+      ) : (
+        <div className="menu-icon" onClick={toggleDrawer}>
+          &#9776;
+        </div>
+      )}
 
+      {/* Drawer component */}
 
+      <div className={isDrawerOpen? "drawer" : 'hiddenDrawer'}>
+        <div className='drawer__header'>
+          <div className="logo">Logo</div>
+          <div onClick={()=> toggleDrawer()}><GiSkullCrossedBones/></div>
+        </div>
+
+        <nav className="drawer-links">
+          {links.map((link, index) => {
+            return <NavLink to={link?.tag} onClick={toggleDrawer}>{link?.name}</NavLink>
+          })}
+        </nav>
+      </div>
 
     </header>
   );

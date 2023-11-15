@@ -67,3 +67,60 @@
 .header_icons:hover{
 color:#f98484;
 }
+/* Drawer style */
+.drawer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+    transform: translateX(-100%);  
+  transition:  0.3s ease-in-out;
+}
+
+.hiddenDrawer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 300px;
+  padding: 1em;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-end;
+    /* transform: translateX(-100%);   */
+  transition:  0.3s ease-in-out;
+}
+.drawer__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.drawer-links {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.drawer-links a {
+  text-decoration: none;
+  margin: 0.5em 0;
+}
+
+/* Show the drawer when it's open */
+.drawer.open {
+  transform: translateX(0);
+}
