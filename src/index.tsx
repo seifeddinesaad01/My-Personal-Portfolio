@@ -21,10 +21,9 @@ ReactDOM.render(
             <Route path="/home" element={<p>home</p>} />
             <Route path="/about" element={<p>about</p>} />
             <Route path="/skills" element={<p>skills</p>} />
-
+            <Route path="/projects" element={<p>projects</p>} />
+            <Route path="/contact" element={<p>contact</p>} />
         </Route>
-      
-
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

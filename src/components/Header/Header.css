@@ -35,6 +35,11 @@
   color: black;
 }
 
+.nav-links a:active {
+  text-decoration: none;
+  color: red;
+}
+
 .nav-links a:hover {
   /* text-decoration: underline; */
   color: #f98484; /* Change the color when hovered over */
@@ -133,7 +138,8 @@ color:#f98484;
   transform: translateX(0);
 }
 
-.active {
-  color: red;
-  /* Add any other styles you want for the active link */
+.active{
+  color: #f98484 !important;
+  border-bottom: 3px solid #f98484;
+  padding-bottom: 0.5rem;
 }

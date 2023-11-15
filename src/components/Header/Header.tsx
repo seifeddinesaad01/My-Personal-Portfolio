@@ -21,9 +21,15 @@ const Header: React.FC = () => {
       {width > 765 ? (
         <>
           <nav className="nav-links">
-            {links.map((link, index) => {
-              return <NavLink to={link?.tag}>{link?.name}</NavLink>;
-            })}
+            {links.map((link, index) => (
+              <NavLink
+                key={index}
+                to={link?.tag}
+                className={window.location.pathname === link?.tag ? 'active' : ''} // Add 'active' class if link is active
+              >
+                {link?.name}
+              </NavLink>
+            ))}
           </nav>
           <div className="icons-wrapper">
             <span className="header_icons">
@@ -45,28 +51,35 @@ const Header: React.FC = () => {
 
       {/* Drawer component */}
 
-      <div className={isDrawerOpen? "drawer" : 'hiddenDrawer'}>
+      <div className={isDrawerOpen ? "drawer" : 'hiddenDrawer'}>
         <div className='drawer__header'>
           <div className="logo">SEIF</div>
-          <div onClick={()=> toggleDrawer()} style={{cursor:"pointer"}}><GiSkullCrossedBones/></div>
+          <div onClick={() => toggleDrawer()} style={{ cursor: "pointer" }}><GiSkullCrossedBones /></div>
         </div>
 
         <nav className="drawer-links">
-          {links.map((link, index) => {
-            return <NavLink className="active" to={link?.tag} onClick={toggleDrawer} >{link?.name}</NavLink>
-          })}
+          {links.map((link, index) => (
+            <NavLink
+              key={index}
+              to={link?.tag}
+              className={window.location.pathname === link?.tag ? 'active' : ''} // Add 'active' class if link is active
+              onClick={toggleDrawer}
+            >
+              {link?.name}
+            </NavLink>
+          ))}
         </nav>
-        <div className="icons-wrapper" style={{width:'100%'}}>
-            <span className="header_icons">
-              <FaInstagram />
-            </span>
-            <span className="header_icons">
-              <FaLinkedinIn />
-            </span>
-            <span className="header_icons">
-              <FaTwitter />
-            </span>
-          </div>
+        <div className="icons-wrapper" style={{ width: '100%' }}>
+          <span className="header_icons">
+            <FaInstagram />
+          </span>
+          <span className="header_icons">
+            <FaLinkedinIn />
+          </span>
+          <span className="header_icons">
+            <FaTwitter />
+          </span>
+        </div>
       </div>
 
     </header>
