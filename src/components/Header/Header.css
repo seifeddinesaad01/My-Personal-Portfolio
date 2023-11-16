@@ -7,7 +7,18 @@
   flex-wrap: nowrap;
   background-color: #efefef;
   position: fixed;
+  transition: background-color 0.3s ease; /* Add transition for smooth effect */
+
 }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow for separation */
+  background-color: #efefef; /* Set the background color when the header is fixed */
+}
+
 
 .logo {
   font-size: 1.5rem;
@@ -76,6 +87,7 @@ color:#f98484;
 /* Drawer style */
 .drawer {
   position: absolute;
+  z-index: 999;
   top: 0;
   left: 0;
   bottom: 0;

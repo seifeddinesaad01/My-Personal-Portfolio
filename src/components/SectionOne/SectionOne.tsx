@@ -8,8 +8,8 @@ const SectionOne = () => {
         <img src={sectionOneImg} alt="sectionImg" className='sectionOne__img'/>
       </div>
       <div className="sectionOne__right">
-        <h4>Core Feature</h4>
-        <h1>Let's work together to bring your ideas to life and create amazing software that makes a difference!</h1>
+        <h1>Core Feature</h1>
+        <h4>Let's work together to bring your <br /> ideas to life and create amazing <br /> software that makes a difference!</h4>
       </div>
     </div>
   )

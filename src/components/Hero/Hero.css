@@ -1,5 +1,5 @@
 .hero__section {
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   /* grid-template-columns: 1fr 1fr; */
   justify-content: space-between;

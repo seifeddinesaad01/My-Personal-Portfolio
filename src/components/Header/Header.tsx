@@ -10,12 +10,14 @@ const Header: React.FC = () => {
   const { width } = useWindow();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
+
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
+
   return (
-    <header className="header">
+    <header className={`header fixed`}>
       <div className="logo">Logo</div>
 
       {width > 765 ? (
