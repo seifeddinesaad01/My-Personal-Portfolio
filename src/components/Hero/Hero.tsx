@@ -10,12 +10,20 @@ const Hero = () => {
                     <h3 className='hero__description'>Web Developer</h3>
                     <div className="hero__buttons">
                     <button className='hero__btn'>Projects</button>
-                    <button className='hero__btn'>Contact</button>
+                    <button className='hero__btn'>Contact me</button>
                     </div>
                     <div className="infos__box">
                         <div className="info__box">
-                            <p>20+</p>
+                            <p>2+</p>
                             <p>experience</p>
+                        </div>
+                        <div className="info__box">
+                            <p>20+</p>
+                            <p>Project Completed</p>
+                        </div>
+                        <div className="info__box">
+                            <p>10+</p>
+                            <p>Happy Client</p>
                         </div>
                     </div>
                 </div>
