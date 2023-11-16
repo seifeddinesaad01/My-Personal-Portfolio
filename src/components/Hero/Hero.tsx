@@ -29,14 +29,12 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <div className="hero__right">
                 <img src={heroImg} alt="cd" className='hero__img' />
             </div>
         </div>
-        {/* <SectionOne/> */}
+        <SectionOne/>
         </>
 
     )

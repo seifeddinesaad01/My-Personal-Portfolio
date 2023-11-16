@@ -6,7 +6,7 @@
   padding: 1rem;
   flex-wrap: nowrap;
   background-color: #efefef;
-  /* position: fixed; */
+  position: fixed;
 }
 
 .logo {

@@ -1,0 +1,22 @@
+.sectionOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+
+}
+
+.sectionOne__left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+.sectionOne__img{
+    max-width: 37rem;
+    min-height: 75vh;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
