@@ -1,8 +1,10 @@
 import React from 'react';
 import heroImg from '../../assets/hero1.png'
 import './Hero.css'
+import SectionOne from '../SectionOne/SectionOne';
 const Hero = () => {
     return (
+        <>
         <div className='hero__section'>
             <div className="hero__left">
                 <div className="hero__info">
@@ -34,6 +36,8 @@ const Hero = () => {
                 <img src={heroImg} alt="cd" className='hero__img' />
             </div>
         </div>
+        {/* <SectionOne/> */}
+        </>
 
     )
 }

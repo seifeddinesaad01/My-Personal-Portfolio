@@ -1,10 +1,15 @@
 .hero__section {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
+  /* grid-template-columns: 1fr 1fr; */
   justify-content: space-between;
   align-items: center;
   background-color: #efefef;
-
+  /* flex-wrap: wrap; */
+  @media (max-width: 800px) {
+    /* grid-template-columns: 1fr; */
+    flex-direction: column-reverse;
+  }
   /* background-color: red; */
 }
 
@@ -23,6 +28,9 @@
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
+  @media (max-width: 1000px) {
+    align-items: center;
+  }
 }
 
 .hero__right {
@@ -32,6 +40,9 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 }
 .hero__img {
   width: 20rem;
@@ -44,40 +55,55 @@
   font-size: 4rem;
   border-bottom: 4px solid #f98484;
   padding-right: 2rem;
+  @media (max-width: 1200px) {
+    /* grid-template-columns: 1fr; */
+    font-size: 2rem;
+  }
+  @media (max-width: 1000px) {
+    padding-right: 0rem;
+  }
+  @media (max-width: 600px) {
+    /* border-bottom: none; */
+    
+  }
 }
 
 .hero__description {
   align-self: flex-start;
   font-size: 1.8rem;
   font-weight: 500;
+  @media (max-width: 1000px) {
+    align-self: center;
+  }
 }
 
-.hero__buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.hero__btn{
-    padding: 1rem 2rem;
-    background-color: black;
-    border-radius: 4px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 550;
-
+.hero__btn {
+  padding: 1rem 2rem;
+  background-color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 550;
+  border: none;
 }
 
-.hero__btn:hover{
-    background-color: #efefef;
-    color: #f98484;
-    transition: ease all 0.3s;
-    border: none;
+.hero__btn:hover {
+  background-color: #efefef;
+  color: #f98484;
+  transition: ease all 0.3s;
+  border: none;
 }
 
-.infos__box{
+.infos__box {
   padding: 2rem;
   background-color: #fff;
   display: flex;
@@ -85,9 +111,16 @@
   align-items: center;
   gap: 2rem;
   border-radius: 1rem;
+  font-size: 4rem;
+  width: 100%;
+  @media (max-width: 600px) {
+    /* grid-template-columns: 1fr; */
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-.info__box{
+.info__box {
   display: flex;
   justify-content: center;
   align-items: flex-start;
