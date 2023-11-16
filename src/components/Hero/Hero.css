@@ -1,16 +1,13 @@
 .hero__section {
   min-height: 100vh;
   display: flex;
-  /* grid-template-columns: 1fr 1fr; */
   justify-content: space-between;
   align-items: center;
   background-color: #efefef;
-  /* flex-wrap: wrap; */
   @media (max-width: 800px) {
     /* grid-template-columns: 1fr; */
     flex-direction: column-reverse;
   }
-  /* background-color: red; */
 }
 
 .hero__left {
