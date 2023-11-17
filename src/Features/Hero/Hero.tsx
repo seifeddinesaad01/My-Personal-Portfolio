@@ -5,7 +5,7 @@ import SectionOne from '../SectionOne/SectionOne';
 import SectionTwo from '../SectionTwo/SectionTwo';
 const Hero = () => {
     return (
-        <div style={{display:'flex', flexDirection:'column', justifyContent:"center", alignItems:"center", width:'100%', gap:'2rem', backgroundColor:"#efefef"}}>
+        // <div style={{display:'flex', flexDirection:'column', justifyContent:"center", alignItems:"center", width:'100%', gap:'2rem', backgroundColor:"#efefef"}}>
         <div className='hero__section'>
             <div className="hero__left">
                 <div className="hero__info">
@@ -35,10 +35,7 @@ const Hero = () => {
                 <img src={heroImg} alt="cd" className='hero__img' />
             </div>
         </div>
-        <SectionOne/>
-        <SectionTwo />
-        </div>
-
+       
     )
 }
 

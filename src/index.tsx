@@ -10,7 +10,8 @@ import {
   Link,
   Outlet
 } from 'react-router-dom';
-import Hero from './components/Hero/Hero';
+import Hero from './Features/Hero/Hero';
+import { Home } from './Views/Home';
 
 const root = document.getElementById('root');
 
@@ -19,7 +20,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-          <Route path="/home" element={<Hero/>} />
+          <Route path="/home" element={<Home/>} />
           <Route path="/about" element={<p>about</p>} />
           <Route path="/skills" element={<p>skills</p>} />
           <Route path="/projects" element={<p>projects</p>} />
