@@ -6,13 +6,14 @@
   padding: 1rem;
   flex-wrap: nowrap;
   background-color: #efefef;
-  position: fixed;
+
   transition: background-color 0.3s ease; /* Add transition for smooth effect */
+  
 
 }
 
 .fixed {
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow for separation */

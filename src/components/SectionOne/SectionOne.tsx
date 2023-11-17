@@ -1,6 +1,6 @@
 import React from 'react'
 import "./SectionOne.css"
-import sectionOneImg from "../../assets/about.jpg";
+import sectionOneImg from "../../assets/about1.jpg";
 import { MdDesignServices } from "react-icons/md";
 import { FaCode } from "react-icons/fa";
 import { SiTestinglibrary } from "react-icons/si";

@@ -7,7 +7,7 @@ import Hero from './components/Hero/Hero';
 
 function App() {
   return (
-    <div className="App">
+    <div style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
       <Header />
       <Outlet />
     </div>

@@ -4,7 +4,7 @@ import './Hero.css'
 import SectionOne from '../SectionOne/SectionOne';
 const Hero = () => {
     return (
-        <>
+        <div style={{display:'flex', flexDirection:'column', justifyContent:"center", alignItems:"center", width:'100%', gap:'2rem', backgroundColor:"#efefef"}}>
         <div className='hero__section'>
             <div className="hero__left">
                 <div className="hero__info">
@@ -35,7 +35,7 @@ const Hero = () => {
             </div>
         </div>
         <SectionOne/>
-        </>
+        </div>
 
     )
 }

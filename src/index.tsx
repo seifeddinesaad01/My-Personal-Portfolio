@@ -19,11 +19,11 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
-            <Route path="/home" element={<Hero/>} />
-            <Route path="/about" element={<p>about</p>} />
-            <Route path="/skills" element={<p>skills</p>} />
-            <Route path="/projects" element={<p>projects</p>} />
-            <Route path="/contact" element={<p>contact</p>} />
+          <Route path="/home" element={<Hero/>} />
+          <Route path="/about" element={<p>about</p>} />
+          <Route path="/skills" element={<p>skills</p>} />
+          <Route path="/projects" element={<p>projects</p>} />
+          <Route path="/contact" element={<p>contact</p>} />
         </Route>
       </Routes>
     </BrowserRouter>
