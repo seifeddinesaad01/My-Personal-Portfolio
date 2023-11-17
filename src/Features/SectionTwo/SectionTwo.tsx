@@ -1,5 +1,8 @@
 import React from 'react'
 import { Tab, Tabs } from '../../components/Tabs/Tabs';
+import "./SectionTwo.css"
+import InfoCard from '../../components/InfoCard/InfoCard';
+import { sectionTwoInfo } from '../../data/constants';
 
 const SectionTwo = () => {
   return (
@@ -16,14 +19,25 @@ const SectionTwo = () => {
       </div>
       <div className="sectionTwo__right">
         <Tabs>
-          <Tab label="Tab 1">
-            <p>Content for Tab 1</p>
+          <Tab label="Experiences">
+          {sectionTwoInfo?.map((info)=>{
+            return  <InfoCard data={info}/>
+          })}
           </Tab>
-          <Tab label="Tab 2">
-            <p>Content for Tab 2</p>
+          <Tab label="Education">
+          {sectionTwoInfo?.map((info)=>{
+            return  <InfoCard data={info}/>
+          })}
           </Tab>
-          <Tab label="Tab 3">
-            <p>Content for Tab 3</p>
+          <Tab label="Skills">
+          {sectionTwoInfo?.map((info)=>{
+            return  <InfoCard data={info}/>
+          })}
+          </Tab>
+          <Tab label="Soft-Skills">
+          {sectionTwoInfo?.map((info)=>{
+            return  <InfoCard data={info}/>
+          })}
           </Tab>
         </Tabs>
 

@@ -19,4 +19,22 @@ export const links = [
       name:"Contact",
        tag:"contact"
     },
-  ]
+  ];
+
+export const sectionTwoInfo =[
+  {
+    position:"Frontend Developer (React - Next)",
+    place:"SoftyLines",
+    date:"September 2022 - Semptember 2023"
+  },
+  {
+    position:"Frontend Developer (React - Next)",
+    place:"SoftyLines",
+    date:"September 2022 - Semptember 2023"
+  },
+  {
+    position:"Frontend Developer (React - Next)",
+    place:"SoftyLines",
+    date:"September 2022 - Semptember 2023"
+  }
+]

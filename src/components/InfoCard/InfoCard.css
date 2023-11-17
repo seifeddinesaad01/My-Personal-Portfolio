@@ -1,0 +1,20 @@
+.infoCard{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-bottom: 3px solid #ededed;
+    padding: 1rem;
+    color: gray;
+}
+
+.infoCard__bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoLayout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
