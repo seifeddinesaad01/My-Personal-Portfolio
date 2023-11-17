@@ -1,0 +1,17 @@
+.sectionThree{
+    /* align-self: flex-start; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    width: 80%;
+    flex-direction: column;
+    gap: 2rem;
+}
+.sectionThree h1{
+    /* align-self: flex-start; */
+    border-bottom: 3px solid #f98484;
+    font-size: 1.4rem;
+    font-weight: 600;
+    
+}
