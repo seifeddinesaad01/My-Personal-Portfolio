@@ -2,6 +2,7 @@ import React from 'react';
 import heroImg from '../../assets/hero1.png'
 import './Hero.css'
 import SectionOne from '../SectionOne/SectionOne';
+import SectionTwo from '../SectionTwo/SectionTwo';
 const Hero = () => {
     return (
         <div style={{display:'flex', flexDirection:'column', justifyContent:"center", alignItems:"center", width:'100%', gap:'2rem', backgroundColor:"#efefef"}}>
@@ -35,6 +36,7 @@ const Hero = () => {
             </div>
         </div>
         <SectionOne/>
+        <SectionTwo />
         </div>
 
     )
