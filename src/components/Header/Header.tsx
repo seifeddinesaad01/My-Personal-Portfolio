@@ -53,7 +53,7 @@ const Header: React.FC = () => {
 
       {/* Drawer component */}
 
-      <div className={isDrawerOpen ? "drawer" : 'hiddenDrawer'}>
+      <div className={!isDrawerOpen ? "drawer" : 'hiddenDrawer'}>
         <div className='drawer__header'>
           <div className="logo">SEIF</div>
           <div onClick={() => toggleDrawer()} style={{ cursor: "pointer" }}><GiSkullCrossedBones /></div>

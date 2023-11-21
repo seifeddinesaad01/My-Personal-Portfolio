@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../../assets/hero1.png'
+import heroImg from '../../assets/hero2.png'
 import './Hero.css'
 import SectionOne from '../SectionOne/SectionOne';
 import SectionTwo from '../SectionTwo/SectionTwo';

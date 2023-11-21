@@ -55,7 +55,7 @@
 
 .nav-links a:hover {
   /* text-decoration: underline; */
-  color: #f98484; /* Change the color when hovered over */
+  color: #2F3D7E; /* Change the color when hovered over */
 }
 
 .icons-wrapper {
@@ -83,7 +83,7 @@
 }
 
 .header_icons:hover{
-color:#f98484;
+color:#2F3D7E;
 }
 /* Drawer style */
 .drawer {
@@ -141,7 +141,7 @@ color:#f98484;
 .drawer-links a {
   text-decoration: none;
   margin: 0.5em 0;
-  border-bottom: 2px solid #f98484;
+  border-bottom: 2px solid #2F3D7E;
   width: 80%;
   color: gray;
   padding-bottom: 0.5rem;
@@ -153,7 +153,7 @@ color:#f98484;
 }
 
 .active{
-  color: #f98484 !important;
-  border-bottom: 3px solid #f98484;
+  color: #2F3D7E !important;
+  border-bottom: 3px solid #2F3D7E;
   padding-bottom: 0.5rem;
 }
