@@ -1,8 +1,6 @@
 import React from 'react';
-import heroImg from '../../assets/hero3.jpg'
-import './Hero.css'
-import SectionOne from '../SectionOne/SectionOne';
-import SectionTwo from '../SectionTwo/SectionTwo';
+import heroImg from '../../assets/hero3.jpg';
+import './Hero.css';
 const Hero = () => {
     return (
         // <div style={{display:'flex', flexDirection:'column', justifyContent:"center", alignItems:"center", width:'100%', gap:'2rem', backgroundColor:"#efefef"}}>
