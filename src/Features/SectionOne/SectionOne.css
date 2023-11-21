@@ -33,7 +33,7 @@
 
 .sectionOne__img {
   width: 80%;
-   min-height: 75vh;
+   max-height: 75vh;
   /* padding: 1rem; */
   border-radius: 1.5rem;
   @media (max-width: 700px) {
