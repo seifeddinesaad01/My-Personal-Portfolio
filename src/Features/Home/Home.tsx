@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className='home__container'>
         <Hero />
-        {/* <SectionOne/> */}
+        <SectionOne/>
         {/* <SectionTwo /> */}
         {/* <SectionThree /> */}
     </div>

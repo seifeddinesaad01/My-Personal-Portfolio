@@ -44,7 +44,7 @@
 .sectionOne__right h1 {
   align-self: flex-start;
   /* width: 19%; */
-  border-bottom: 3px solid #f98484;
+  border-bottom: 3px solid #2F3D7E;
   font-size: 1.4rem;
   font-weight: 600;
   @media (max-width: 1238px) {
@@ -89,7 +89,7 @@
 }
 
 .sectionOne__category:hover {
-  background-color: #f3c6c6;
+  background-color: #6380ff;
   color: #fff;
 }
 
@@ -100,10 +100,10 @@
 
 .sectionOne__btn {
   padding: 1rem 2rem;
-  background-color: #f3c6c6;
+  background-color: #2F3D7E;
   border-radius: 4px;
   cursor: pointer;
-  color: black;
+  color: #fff;
   font-size: 1.2rem;
   font-weight: 550;
   border: none;
@@ -113,6 +113,6 @@
 
 .sectionOne__btn:hover {
   background-color: #fff;
-  color: #f98484;
+  color: #2F3D7E;
   transition: ease all 0.3s;
 }
