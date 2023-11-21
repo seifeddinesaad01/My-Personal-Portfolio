@@ -9,7 +9,7 @@ const Home = () => {
     <div className='home__container'>
       <Hero />
       <SectionOne />
-      {/* <SectionTwo /> */}
+      <SectionTwo />
       {/* <SectionThree /> */}
     </div>
   )
