@@ -7,10 +7,10 @@ import SectionThree from '../SectionThree/SectionThree'
 const Home = () => {
   return (
     <div className='home__container'>
-        <Hero />
-        <SectionOne/>
-        {/* <SectionTwo /> */}
-        {/* <SectionThree /> */}
+      <Hero />
+      <SectionOne />
+      {/* <SectionTwo /> */}
+      {/* <SectionThree /> */}
     </div>
   )
 }

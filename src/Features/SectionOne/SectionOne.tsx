@@ -28,7 +28,7 @@ const SectionOne = () => {
             <p style={{fontSize:"1.2rem", fontWeight:"600"}}>Testing</p>
           </div>
         </div>
-        <p className='sectionOne__text'>Hi, I'm a software engineering student and developer with <br /> a passion for solving complex problems through code.
+        <p className='sectionOne__text'>Hi, I'm a software engineering student and developer with a passion for solving complex problems through code.
         </p>
         <button className='sectionOne__btn'>Contact Me</button>
 

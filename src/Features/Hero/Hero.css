@@ -5,6 +5,7 @@
   align-items: center;
   background-color: #efefef;
   width: 100%;
+  padding-bottom: 2rem;
   @media (max-width: 800px) {
     /* grid-template-columns: 1fr; */
     flex-direction: column-reverse;
