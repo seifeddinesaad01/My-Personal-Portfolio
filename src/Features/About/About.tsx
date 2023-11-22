@@ -1,7 +1,7 @@
 import React from 'react'
 import "./About.css";
 import InfoCard from '../../components/InfoCard/InfoCard';
-import { sectionTwoInfo } from '../../data/constants';
+import { educationInfo, sectionTwoInfo } from '../../data/constants';
 const About = () => {
     return (
         <div className="about__container">
@@ -20,12 +20,12 @@ const About = () => {
             <div className="about__bottom">
                 <h1>Work Experience</h1>
                 {sectionTwoInfo?.map((info) => {
-                    return <InfoCard data={info}/>
+                    return <InfoCard data={info} />
                 })}
-                 <h1>Education</h1>
-                {sectionTwoInfo?.map((info) => {
-                    return <InfoCard data={info}/>
-                })}
+                <h1>Education</h1>
+                {educationInfo?.map((info) => {
+                        return <InfoCard data={info} />
+                    })}
             </div>
 
         </div>)

@@ -2,7 +2,7 @@ import React from 'react'
 import { Tab, Tabs } from '../../components/Tabs/Tabs';
 import "./SectionTwo.css"
 import InfoCard from '../../components/InfoCard/InfoCard';
-import { sectionTwoInfo } from '../../data/constants';
+import { educationInfo, sectionTwoInfo } from '../../data/constants';
 
 const SectionTwo = () => {
   return (
@@ -25,7 +25,7 @@ const SectionTwo = () => {
           })}
           </Tab>
           <Tab label="Education">
-          {sectionTwoInfo?.map((info)=>{
+          {educationInfo?.map((info)=>{
             return  <InfoCard data={info}/>
           })}
           </Tab>
