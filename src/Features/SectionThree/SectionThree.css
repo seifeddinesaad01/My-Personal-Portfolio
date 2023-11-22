@@ -3,15 +3,21 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 100vh;
-    width: 80%;
+    min-height: 80vh;
+    width: 90%;
     flex-direction: column;
     gap: 2rem;
 }
 .sectionThree h1{
-    /* align-self: flex-start; */
-    border-bottom: 3px solid #f98484;
+    border-bottom: 3px solid #2F3D7E;
     font-size: 1.4rem;
     font-weight: 600;
-    
+}
+
+.sectionThree__bottom{
+    align-self: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  
 }
