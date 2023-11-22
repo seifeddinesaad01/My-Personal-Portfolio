@@ -3,13 +3,16 @@
 .tabs-container {
     width: 100%;
     justify-self: flex-start;
-    /* margin: 0 auto; */
   }
   
   .tabs {
     display: flex;
     border-bottom: 2px solid #efefef;
-    width: 100%;
+    @media (max-width: 900px) {
+      align-items: center;
+      justify-content: center;
+
+    }
   }
   
   .tab {
@@ -18,7 +21,7 @@
     cursor: pointer;
     border-radius: 4px 4px 0 0;
     margin-right: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
   .tab:hover {
@@ -27,9 +30,7 @@
   
   .tab.active {
     background-color: #fff;
-    border-bottom: 3px solid #2F3D7E;
-
-
+    border-bottom: 3px solid #2F3D7E; 
   }
   
   .tab-content {

@@ -5,6 +5,7 @@
   background-color: #efefef;
   min-height: 80vh;
    gap: 2rem;
+   padding-bottom: 2rem;
   /* flex-wrap: wrap; */
   @media (max-width: 900px) {
     flex-wrap: wrap;
