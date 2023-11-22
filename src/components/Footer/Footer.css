@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: #2F3D7E;
+    width: 100%;
+    color: #fff;
+}
+
+.footer p{
+    font-size: 1.2rem;
+}
+
+.myName{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+}
