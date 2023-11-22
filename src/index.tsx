@@ -13,6 +13,7 @@ import {
 import Hero from './Features/Hero/Hero';
 import { Home } from './Views/Home';
 import { About } from './Views/About';
+import { Skills } from './Views/Skills';
 
 const root = document.getElementById('root');
 
@@ -23,7 +24,7 @@ ReactDOM.render(
         <Route path="/" element={<App />}>
           <Route path="/home" element={<Home/>} />
           <Route path="/about" element={<About/>} />
-          <Route path="/skills" element={<p>skills</p>} />
+          <Route path="/skills" element={<Skills/>} />
           <Route path="/projects" element={<p>projects</p>} />
           <Route path="/contact" element={<p>contact</p>} />
         </Route>
