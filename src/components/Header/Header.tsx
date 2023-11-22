@@ -35,7 +35,7 @@ const Header: React.FC = () => {
           </nav>
           <div className="icons-wrapper">
             <span className="header_icons">
-              <FaInstagram />
+              <FaInstagram className='rotating-icon' />
             </span>
             <span className="header_icons">
               <FaLinkedinIn />

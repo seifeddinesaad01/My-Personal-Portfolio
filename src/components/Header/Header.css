@@ -157,3 +157,17 @@ color:#2F3D7E;
   border-bottom: 3px solid #2F3D7E;
   padding-bottom: 0.5rem;
 }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /* Rotate 3 times (3 * 360deg) */
+  }
+}
+
+.header_icons:hover {
+  animation: rotate 0.3s linear 1; /* 1s duration, linear timing function, repeat 3 times */
+}
+
