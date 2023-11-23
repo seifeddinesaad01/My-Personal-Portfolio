@@ -1,40 +1,62 @@
 /* Form.css */
 .form-container {
-    max-width: 400px;
-    margin: auto;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 8px;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-  }
-  
-  .error {
-    color: red;
-    font-size: 14px;
-    margin-top: 4px;
-  }
-  
-  button {
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
+  width: 80%;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  /* gap: 0.5rem; */
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+textarea{
+  resize: none;
+min-height: 20vh;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  /* margin-top: 4px; */
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.form__top{
+    display: flex;
+    gap: 1rem;
+}
