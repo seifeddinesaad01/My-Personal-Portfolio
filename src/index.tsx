@@ -15,6 +15,7 @@ import { Home } from './Views/Home';
 import { About } from './Views/About';
 import { Skills } from './Views/Skills';
 import { Projects } from './Views/Projects';
+import { Contact } from './Views/Contact';
 
 const root = document.getElementById('root');
 
@@ -27,7 +28,7 @@ ReactDOM.render(
           <Route path="/about" element={<About/>} />
           <Route path="/skills" element={<Skills/>} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<p>contact</p>} />
+          <Route path="/contact" element={<Contact /> } />
         </Route>
       </Routes>
     </BrowserRouter>
