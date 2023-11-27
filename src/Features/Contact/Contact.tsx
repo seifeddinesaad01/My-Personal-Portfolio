@@ -44,21 +44,19 @@ const Contact: React.FC = () => {
                         <div className="form-group">
                             <label htmlFor="fullName">Full Name:</label>
                             <Field type="text" id="fullName" name="fullName" />
+                            <ErrorMessage name="fullName" component="div" className="error" />
+
                         </div>
-
-
                         <div className="form-group">
                             <label htmlFor="email">Email:</label>
                             <Field type="email" id="email" name="email" />
                             <ErrorMessage name="email" component="div" className="error" />
                         </div>
-
                         <div className="form-group">
                             <label htmlFor="subject">Subject:</label>
                             <Field type="text" id="subject" name="subject" />
-
+                            <ErrorMessage name="subject" component="div" className="error" />
                         </div>
-                        <ErrorMessage name="subject" component="div" className="error" />
 
                     </div>
 

@@ -5,7 +5,7 @@ import { SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiJest } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
-const skills = [
+export const skills = [
     {
         icon: <FaReact />,
         name: "React JS"

@@ -28,27 +28,23 @@ export const sectionTwoInfo = [
     date: "September 2022 - Semptember 2023",
   },
   {
-    position: "Frontend Developer (React - Next)",
-    place: "SoftyLines",
-    date: "September 2022 - Semptember 2023",
-  },
-  {
-    position: "Frontend Developer (React - Next)",
-    place: "SoftyLines",
-    date: "September 2022 - Semptember 2023",
+    position: "Freelance",
+    place: "Upwork",
+    date: "Current",
   },
 ];
 
 export const educationInfo = [
-  {
-    position: "Baccalaureate in computer science",
-    place:"Ouerdanine High School",
-    date:"2022"
-  },
+  
   {
     position: "licence in computer science",
     place:"ISIMM",
     date:"current"
+  },
+  {
+    position: "Baccalaureate in computer science",
+    place:"Ouerdanine High School",
+    date:"2022"
   }
 ];
 

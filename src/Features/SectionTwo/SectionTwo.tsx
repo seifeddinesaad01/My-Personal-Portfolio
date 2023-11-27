@@ -3,6 +3,10 @@ import { Tab, Tabs } from '../../components/Tabs/Tabs';
 import "./SectionTwo.css"
 import InfoCard from '../../components/InfoCard/InfoCard';
 import { educationInfo, sectionTwoInfo } from '../../data/constants';
+import { skills } from '../Skills/Skills';
+import { GiPublicSpeaker } from "react-icons/gi";
+import { FcIdea } from "react-icons/fc";
+
 
 const SectionTwo = () => {
   return (
@@ -20,24 +24,47 @@ const SectionTwo = () => {
       <div className="sectionTwo__right">
         <Tabs>
           <Tab label="Experiences">
-          {sectionTwoInfo?.map((info)=>{
-            return  <InfoCard data={info}/>
-          })}
+            {sectionTwoInfo?.map((info) => {
+              return <InfoCard data={info} />
+            })}
           </Tab>
           <Tab label="Education">
-          {educationInfo?.map((info)=>{
-            return  <InfoCard data={info}/>
-          })}
+            {educationInfo?.map((info) => {
+              return <InfoCard data={info} />
+            })}
           </Tab>
           <Tab label="Skills">
-          {sectionTwoInfo?.map((info)=>{
-            return  <InfoCard data={info}/>
-          })}
+            <div className="icons__container">
+              {skills?.map((skill) => {
+                return <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+                  <p className='skill__icon'>{skill?.icon}</p>
+                  <p className='skill__name'>{skill?.name}</p>
+                </div>
+              })}
+            </div>
           </Tab>
           <Tab label="Soft-Skills">
-          {sectionTwoInfo?.map((info)=>{
-            return  <InfoCard data={info}/>
-          })}
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: "flex-start",
+                alignItems: "flex-start",
+                flexDirection: 'column',
+                gap: '0.5rem'
+              }}>
+              {/* <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><GiPublicSpeaker fontSize="2rem" color='#2f3d7e' />Public speaking</p>
+                <p style={{ color: 'gray', fontSize: '1.1rem' }}>Have extensive experience of public speaking in the form of event hosting and delivering presentation in front of large audience. Also participated in in multiple debate and MUN competetions which further helped in developing these skills.</p>
+              </div> */}
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><FcIdea fontSize="2rem" color="#2f3d7e" />Quick & Visual Learner</p>
+                <p style={{ color: 'gray', fontSize: '1.1rem' }}>I am a very strong visual learner and am determined to solve problems and quickly find an effective solution.</p>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><FcIdea fontSize="2rem" color="#2f3d7e" />Effective Problem Solver</p>
+                <p style={{ color: 'gray', fontSize: '1.1rem' }}>I have the capability to solve problems and determining the cause of the problem. Identifying, prioritizing, and selecting alternatives for a solution; and implementing a solution.</p>
+              </div>
+            </div>
           </Tab>
         </Tabs>
 
