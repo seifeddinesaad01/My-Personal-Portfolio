@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { links } from '../../data/constants';
 import { FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { GiSkullCrossedBones } from "react-icons/gi";
-
+import logo from "../../assets/logo.png"
 const Header: React.FC = () => {
   const { width } = useWindow();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -18,7 +18,9 @@ const Header: React.FC = () => {
 
   return (
     <header className={`header fixed`}>
-      <div className="logo">Logo</div>
+      <div className="logo">
+        <img src={logo} alt="logo" style={{width:'10rem'}}/>
+      </div>
 
       {width > 765 ? (
         <>

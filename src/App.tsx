@@ -26,17 +26,11 @@ function App() {
   }, []);
   return (
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-      {
-        loading
-          ?
-          <Spinner />
-          :
-          <>
-            <Header />
-            <Outlet />
-            <Footer /></>
-      }
-
+      <>
+        <Header />
+        <Outlet />
+        <Footer />
+      </>
     </div>
   );
 }

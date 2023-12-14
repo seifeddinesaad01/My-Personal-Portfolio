@@ -4,6 +4,7 @@ import { FaRegBuilding } from "react-icons/fa";
 import { CiCalendarDate } from "react-icons/ci";
 
 const InfoCard = ({ data }: any) => {
+    console.log(data, "data");
 
     return (
         <div className='infoCard'>
