@@ -1,3 +1,4 @@
+import projectImg from '../assets/ProjectImage1.jpg'
 export const links = [
   {
     name: "Home",
@@ -35,31 +36,42 @@ export const sectionTwoInfo = [
 ];
 
 export const educationInfo = [
-  
   {
     position: "licence in computer science",
-    place:"ISIMM",
-    date:"current"
+    place: "ISIMM",
+    date: "current",
   },
   {
     position: "Baccalaureate in computer science",
-    place:"Ouerdanine High School",
-    date:"2022"
-  }
+    place: "Ouerdanine High School",
+    date: "2022",
+  },
 ];
 
 export const projects = [
   {
-      title: "YOUTUBE-CLONE",
-      description: "Experience the essence of YouTube in our seamless and user-friendly video-sharing clone."  ,      imageSrc:"https://github.com/seifeddinesaad01/youtube-clone/blob/master/src/yt-clone.png?raw=true",
-      githubLink:"https://github.com/seifeddinesaad01/youtube-clone",
-      liveSiteLink:"vdfv"
+    title: "The Digital Hippo",
+    description:
+      "Complete marketplace built from scratch in Next.js 14 💻 ",
+    imageSrc:projectImg,
+    githubLink: "https://github.com/seifeddinesaad01/youtube-clone",
+    liveSiteLink: "vdfv",
   },
   {
-      title:"MOVIX APP",
-      description:"Discover and showcase the best movies with Movix app",
-      imageSrc:"https://github.com/seifeddinesaad01/MOVIX-APP/raw/master/public/overview.png",
-      githubLink:"https://github.com/seifeddinesaad01/MOVIX-APP",
-      liveSiteLink:"sfvs"
-  }
-]
+    title: "YOUTUBE-CLONE",
+    description:
+      "Experience the essence of YouTube in our seamless and user-friendly video-sharing clone.",
+    imageSrc:
+      "https://github.com/seifeddinesaad01/youtube-clone/blob/master/src/yt-clone.png?raw=true",
+    githubLink: "https://github.com/seifeddinesaad01/youtube-clone",
+    liveSiteLink: "vdfv",
+  },
+  {
+    title: "MOVIX APP",
+    description: "Discover and showcase the best movies with Movix app",
+    imageSrc:
+      "https://github.com/seifeddinesaad01/MOVIX-APP/raw/master/public/overview.png",
+    githubLink: "https://github.com/seifeddinesaad01/MOVIX-APP",
+    liveSiteLink: "sfvs",
+  },
+];
