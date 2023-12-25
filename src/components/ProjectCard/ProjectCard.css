@@ -40,9 +40,11 @@
       color: #333;
       text-decoration: none;
       transition: color 0.3s ease-in-out;
+      font-size: 1.1rem;
+      font-weight: bolder;
   
       &:hover {
-        color: #007bff;
+        color: #2F3D7E;
       }
   
       i {

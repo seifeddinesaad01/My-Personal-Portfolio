@@ -24,15 +24,15 @@ export const links = [
 
 export const sectionTwoInfo = [
   {
-    position: "Frontend Developer (React - Next)",
-    place: "SoftyLines",
-    date: "September 2022 - Semptember 2023",
-  },
-  {
     position: "Freelance",
     place: "Upwork",
     date: "Current",
   },
+  {
+    position: "Frontend Developer (React - Next)",
+    place: "SoftyLines",
+    date: "September 2022 - Semptember 2023",
+  }
 ];
 
 export const educationInfo = [
@@ -55,7 +55,15 @@ export const projects = [
       "Complete marketplace built from scratch in Next.js 14 💻 ",
     imageSrc:projectImg,
     githubLink: "https://github.com/seifeddinesaad01/youtube-clone",
-    liveSiteLink: "vdfv",
+    liveSiteLink: "empty",
+  },
+  {
+    title: "MOVIX APP",
+    description: "Discover and showcase the best movies with Movix app",
+    imageSrc:
+      "https://github.com/seifeddinesaad01/MOVIX-APP/raw/master/public/overview.png",
+    githubLink: "https://github.com/seifeddinesaad01/MOVIX-APP",
+    liveSiteLink: "https://movix-dev.netlify.app/",
   },
   {
     title: "YOUTUBE-CLONE",
@@ -64,14 +72,15 @@ export const projects = [
     imageSrc:
       "https://github.com/seifeddinesaad01/youtube-clone/blob/master/src/yt-clone.png?raw=true",
     githubLink: "https://github.com/seifeddinesaad01/youtube-clone",
-    liveSiteLink: "vdfv",
+    liveSiteLink: "empty",
   },
   {
-    title: "MOVIX APP",
-    description: "Discover and showcase the best movies with Movix app",
-    imageSrc:
-      "https://github.com/seifeddinesaad01/MOVIX-APP/raw/master/public/overview.png",
-    githubLink: "https://github.com/seifeddinesaad01/MOVIX-APP",
-    liveSiteLink: "sfvs",
+    title: "Omnifood",
+    imageSrc:"https://github.com/seifeddinesaad01/omnifood/blob/main/img/omnifood.png?raw=true",
+    description:"Omnifood a static website that i have created using HTML and CSS",
+    githubLink: "https://github.com/seifeddinesaad01/omnifood",
+    liveSiteLink: "https://dev-omnifood.netlify.app/",
   },
+
+  
 ];

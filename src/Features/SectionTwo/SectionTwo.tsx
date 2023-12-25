@@ -4,11 +4,15 @@ import "./SectionTwo.css"
 import InfoCard from '../../components/InfoCard/InfoCard';
 import { educationInfo, sectionTwoInfo } from '../../data/constants';
 import { skills } from '../Skills/Skills';
-import { GiPublicSpeaker } from "react-icons/gi";
 import { FcIdea } from "react-icons/fc";
+import { NavLink } from 'react-router-dom';
 
 
 const SectionTwo = () => {
+  const navLinkStyle = {
+    textDecoration: 'none',
+    color: 'white',
+  };
   return (
     <div className="sectionTwo">
       <div className="sectionTwo__left">
@@ -18,7 +22,14 @@ const SectionTwo = () => {
         <p className='sectionTwo__text'>
           One of my favorite activities is to educate and mentor others in the field to fulfill their potential and deepen my knowledge. You can find more about this on my CV
         </p>
-        <button className='sectionOne__btn'>Download CV</button>
+        <button className='sectionOne__btn'>
+          <NavLink
+            target="_blank"
+            style={navLinkStyle}
+            to="https://jade-lilian-73.tiiny.site">
+            See Resume
+          </NavLink>
+        </button>
 
       </div>
       <div className="sectionTwo__right">
@@ -52,10 +63,6 @@ const SectionTwo = () => {
                 flexDirection: 'column',
                 gap: '0.5rem'
               }}>
-              {/* <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><GiPublicSpeaker fontSize="2rem" color='#2f3d7e' />Public speaking</p>
-                <p style={{ color: 'gray', fontSize: '1.1rem' }}>Have extensive experience of public speaking in the form of event hosting and delivering presentation in front of large audience. Also participated in in multiple debate and MUN competetions which further helped in developing these skills.</p>
-              </div> */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><FcIdea fontSize="2rem" color="#2f3d7e" />Quick & Visual Learner</p>
                 <p style={{ color: 'gray', fontSize: '1.1rem' }}>I am a very strong visual learner and am determined to solve problems and quickly find an effective solution.</p>

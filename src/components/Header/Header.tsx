@@ -14,7 +14,27 @@ const Header: React.FC = () => {
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
-
+const socialMedia= [
+  {
+    id: 1,
+    icon: <FaInstagram />,
+    url: 'https://www.instagram.com/saifeddine.sd/'
+  },
+  {
+    id: 2,
+    icon: <FaLinkedinIn />,
+    url: 'https://www.linkedin.com/in/seif-eddine-saad-3728aa19b/',
+  },
+  {
+    id: 3,
+    icon: <FaTwitter />,
+    url: 'https://twitter.com/Saif71564790',
+  }
+]
+ const navLinkStyle = {
+  textDecoration: 'none',
+  color: 'black',
+};
 
   return (
     <header className={`header fixed`}>
@@ -36,15 +56,12 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <div className="icons-wrapper">
-            <span className="header_icons">
-              <FaInstagram className='rotating-icon' />
-            </span>
-            <span className="header_icons">
-              <FaLinkedinIn />
-            </span>
-            <span className="header_icons">
-              <FaTwitter />
-            </span>
+            {socialMedia.map(socialMedia =>{
+                return <NavLink target="_blank" to={socialMedia.url} style={navLinkStyle} className="header_icons">
+                  {socialMedia.icon}
+                </NavLink>
+            })}
+           
           </div>
         </>
       ) : (

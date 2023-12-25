@@ -1,5 +1,8 @@
 import React from 'react';
 import "./ProjectCard.css";
+import { FaGithub } from "react-icons/fa";
+import { MdLiveTv } from "react-icons/md";
+
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -22,12 +25,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <h3 className="project-title">{title}</h3>
         <p className="project-description">{description}</p>
         <div className="project-links">
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-github"></i> GitHub
+          <a href={githubLink} target="_blank" rel="noopener noreferrer"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "0.5rem"
+            }}>
+            <FaGithub /> GitHub
           </a>
-          <a href={liveSiteLink} target="_blank" rel="noopener noreferrer">
-            Live Site <i className="fas fa-external-link-alt"></i>
-          </a>
+          {liveSiteLink !== "empty" &&
+            <a
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: "0.5rem"
+              }} href={liveSiteLink} target="_blank" rel="noopener noreferrer">
+              <MdLiveTv /> Live Site
+            </a>}
+
         </div>
       </div>
     </div>
