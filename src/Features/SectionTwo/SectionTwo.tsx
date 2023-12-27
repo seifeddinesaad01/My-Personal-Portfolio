@@ -22,14 +22,15 @@ const SectionTwo = () => {
         <p className='sectionTwo__text'>
           One of my favorite activities is to educate and mentor others in the field to fulfill their potential and deepen my knowledge. You can find more about this on my CV
         </p>
-        <button className='sectionOne__btn'>
+        {/* <button className='sectionOne__btn'> */}
           <NavLink
+           className='sectionOne__btn'
             target="_blank"
             style={navLinkStyle}
             to="https://jade-lilian-73.tiiny.site">
             See Resume
           </NavLink>
-        </button>
+        {/* </button> */}
 
       </div>
       <div className="sectionTwo__right">
