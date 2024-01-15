@@ -1,5 +1,5 @@
 {
-  "homepage": "https://seifeddinesaad01.github.io/",
+  "homepage": "https://seifeddinesaad01.github.io/My-Personal-Portfolio",
   "name": "my-ts-app",
   "version": "0.1.0",
   "private": true,
@@ -26,7 +26,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build --no-warnings",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
