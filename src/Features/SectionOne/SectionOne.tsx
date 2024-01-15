@@ -4,6 +4,7 @@ import sectionOneImg from "../../assets/about1.jpg";
 import { MdDesignServices } from "react-icons/md";
 import { FaCode } from "react-icons/fa";
 import { SiTestinglibrary } from "react-icons/si";
+import { NavLink } from 'react-router-dom';
 
 const SectionOne = () => {
   return (
@@ -17,21 +18,22 @@ const SectionOne = () => {
         <div className="sectionOne__categories">
           <div className="sectionOne__category">
             <FaCode fontSize="3rem" color='#2F3D7E' />
-            <p style={{fontSize:"1.2rem", fontWeight:"600"}}>Coding</p>
+            <p style={{ fontSize: "1.2rem", fontWeight: "600" }}>Coding</p>
           </div>
           <div className="sectionOne__category">
             <MdDesignServices fontSize="3rem" color='#2F3D7E' />
-            <p style={{fontSize:"1.2rem", fontWeight:"600"}}>Design</p>
+            <p style={{ fontSize: "1.2rem", fontWeight: "600" }}>Design</p>
           </div>
           <div className="sectionOne__category">
             <SiTestinglibrary fontSize="3rem" color='#2F3D7E' />
-            <p style={{fontSize:"1.2rem", fontWeight:"600"}}>Testing</p>
+            <p style={{ fontSize: "1.2rem", fontWeight: "600" }}>Testing</p>
           </div>
         </div>
         <p className='sectionOne__text'>Hi, I'm a software engineering student and developer with a passion for solving complex problems through code.
         </p>
-        <button className='sectionOne__btn'>Contact Me</button>
-
+        <NavLink to="/contact">
+          <button className='sectionOne__btn'>Contact Me</button>
+        </NavLink>
       </div>
     </div>
   )

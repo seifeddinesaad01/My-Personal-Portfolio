@@ -22,16 +22,13 @@ const SectionTwo = () => {
         <p className='sectionTwo__text'>
           One of my favorite activities is to educate and mentor others in the field to fulfill their potential and deepen my knowledge. You can find more about this on my CV
         </p>
-        {/* <button className='sectionOne__btn'> */}
-          <NavLink
-           className='sectionOne__btn'
-            target="_blank"
-            style={navLinkStyle}
-            to="https://jade-lilian-73.tiiny.site">
-            See Resume
-          </NavLink>
-        {/* </button> */}
-
+        <NavLink
+          className='sectionOne__btn'
+          target="_blank"
+          style={navLinkStyle}
+          to="https://www.pdffiller.com/jsfiller-desk12/?flat_pdf_quality=high&isShareViaLink=1&lang=en&projectId=1427776696&loader=tips&MEDIUM_PDFJS=true&PAGE_REARRANGE_V2_MVP=true&richTextFormatting=true&isPageRearrangeV2MVP=true&jsf-page-rearrange-v2=true&LATEST_PDFJS=true&jsf-document-scroll-zoom=true&jsf-redesign-full=true&jsf-dss-v2=false&routeId=aef620af9c57592a25a279bda891ef42#96ed4bc2ef20485aa203323541c38707">
+          See Resume
+        </NavLink>
       </div>
       <div className="sectionTwo__right">
         <Tabs>
@@ -62,7 +59,8 @@ const SectionTwo = () => {
                 justifyContent: "flex-start",
                 alignItems: "flex-start",
                 flexDirection: 'column',
-                gap: '0.5rem'
+                gap: '0.5rem',
+                paddingTop:"1rem"
               }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><FcIdea fontSize="2rem" color="#2f3d7e" />Quick & Visual Learner</p>

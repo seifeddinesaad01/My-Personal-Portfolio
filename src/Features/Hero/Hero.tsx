@@ -1,6 +1,7 @@
 import React from 'react';
 import heroImg from '../../assets/about.jpg';
 import './Hero.css';
+import { NavLink } from 'react-router-dom';
 const Hero = () => {
     return (
         <div className='hero__section'>
@@ -9,8 +10,12 @@ const Hero = () => {
                     <h1 className='hero__title'>Seif Eddine Saad</h1>
                     <h3 className='hero__description'>Front End Developer</h3>
                     <div className="hero__buttons">
-                        <button className='sectionOne__btn'>Projects</button>
-                        <button className='sectionOne__btn'>Contact me</button>
+                        <NavLink to="/projects">
+                            <button className='sectionOne__btn'>Projects</button>
+                        </NavLink>
+                        <NavLink to="/contact">
+                            <button className='sectionOne__btn'>Contact me</button>
+                        </NavLink>
                     </div>
                     <div className="infos__box">
                         <div className="info__box">

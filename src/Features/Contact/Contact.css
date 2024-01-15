@@ -2,14 +2,16 @@
 .form-container {
   width: 80%;
   margin: auto;
-  padding: 3rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
   flex-direction: column;
   min-height: 80vh;
-  /* background-color: rgb(211, 211, 211)  ; */
+   background-color: rgb(211, 211, 211)  ; 
+   border-radius: 1rem;
 }
 
 .form-group {

@@ -1,6 +1,6 @@
 // Form.tsx
 import React from 'react';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
+import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import './Contact.css';
 
@@ -44,18 +44,17 @@ const Contact: React.FC = () => {
                         <div className="form-group">
                             <label htmlFor="fullName">Full Name:</label>
                             <Field type="text" id="fullName" name="fullName" />
-                            <ErrorMessage name="fullName" component="div" className="error" />
-
+                            {/* <ErrorMessage name="fullName" component="div" className="error" /> */}
                         </div>
                         <div className="form-group">
                             <label htmlFor="email">Email:</label>
                             <Field type="email" id="email" name="email" />
-                            <ErrorMessage name="email" component="div" className="error" />
+                            {/* <ErrorMessage name="email" component="div" className="error" /> */}
                         </div>
                         <div className="form-group">
                             <label htmlFor="subject">Subject:</label>
                             <Field type="text" id="subject" name="subject" />
-                            <ErrorMessage name="subject" component="div" className="error" />
+                            {/* <ErrorMessage name="subject" component="div" className="error" /> */}
                         </div>
 
                     </div>
@@ -63,10 +62,10 @@ const Contact: React.FC = () => {
                     <div className="form-group">
                         <label htmlFor="message">Message:</label>
                         <Field as="textarea" id="message" name="message" />
-                        <ErrorMessage name="message" component="div" className="error" />
+                        {/* <ErrorMessage name="message" component="div" className="error" /> */}
                     </div>
 
-                    <button type="submit">Submit</button>
+                    <button className="sectionOne__btn" type="submit">Submit</button>
                 </Form>
             </Formik>
         </div>
