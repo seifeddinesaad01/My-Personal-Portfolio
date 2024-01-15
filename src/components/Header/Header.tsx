@@ -3,7 +3,9 @@ import './Header.css';
 import useWindow from '../../utils/useWindow';
 import { NavLink } from 'react-router-dom';
 import { links } from '../../data/constants';
-import { FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
+
 import { GiSkullCrossedBones } from "react-icons/gi";
 import logo from "../../assets/logo.png"
 const Header: React.FC = () => {
@@ -27,7 +29,7 @@ const socialMedia= [
   },
   {
     id: 3,
-    icon: <FaTwitter />,
+    icon: <FaXTwitter />,
     url: 'https://twitter.com/Saif71564790',
   }
 ]
@@ -98,7 +100,7 @@ const socialMedia= [
             <FaLinkedinIn />
           </span>
           <span className="header_icons">
-            <FaTwitter />
+            <FaXTwitter />
           </span>
         </div>
       </div>
