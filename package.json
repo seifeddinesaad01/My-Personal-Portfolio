@@ -1,4 +1,5 @@
 {
+  "homepage": "https://seifeddinesaad01.github.io/",
   "name": "my-ts-app",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,8 @@
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "antd": "^5.11.4",
+    "axios-retry": "^4.0.0",
+    "bundler": "^0.8.0",
     "formik": "^2.4.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
