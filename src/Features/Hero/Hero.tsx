@@ -23,7 +23,7 @@ const Hero = () => {
                             <p>experience</p>
                         </div>
                         <div className="info__box">
-                            <p>20+</p>
+                            <p>10+</p>
                             <p>Project Completed</p>
                         </div>
                         <div className="info__box">

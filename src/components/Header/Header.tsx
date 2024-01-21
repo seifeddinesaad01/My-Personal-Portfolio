@@ -7,7 +7,7 @@ import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 
 import { GiSkullCrossedBones } from "react-icons/gi";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo1.png"
 const Header: React.FC = () => {
   const { width } = useWindow();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
