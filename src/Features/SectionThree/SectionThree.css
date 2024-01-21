@@ -7,9 +7,10 @@
     width: 90%;
     flex-direction: column;
     gap: 2rem;
+    background-color: #efefef;
 }
 .sectionThree h1{
-    border-bottom: 3px solid #2F3D7E;
+    border-bottom: 3px solid hsla(272, 66%, 48%, 1);
     font-size: 1.4rem;
     font-weight: 600;
 }

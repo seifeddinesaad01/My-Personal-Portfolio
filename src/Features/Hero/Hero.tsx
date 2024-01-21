@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../../assets/about.jpg';
+import heroImg from '../../assets/king123.jpg';
 import './Hero.css';
 import { NavLink } from 'react-router-dom';
 const Hero = () => {
@@ -7,8 +7,14 @@ const Hero = () => {
         <div className='hero__section'>
             <div className="hero__left">
                 <div className="hero__info">
-                    <h1 className='hero__title'>Seif Eddine Saad</h1>
-                    <h3 className='hero__description'>Front End Developer</h3>
+                    <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "flex-start" }}>
+                        <h1 className='hero__title'>Hi, I'm Seif 👋</h1>
+                        <p style={{
+                            color: "gray",
+                            fontSize: "1.2rem"
+                        }}>I'm a front end developer (React.js & Next.js)
+                        </p>
+                    </div>
                     <div className="hero__buttons">
                         <NavLink to="/projects">
                             <button className='sectionOne__btn'>Projects</button>
@@ -17,7 +23,9 @@ const Hero = () => {
                             <button className='sectionOne__btn'>Contact me</button>
                         </NavLink>
                     </div>
-                    <div className="infos__box">
+                    <div className="infos__box" style={{
+                        border:"2px solid #812bccff"
+                    }}>
                         <div className="info__box">
                             <p>2+</p>
                             <p>experience</p>

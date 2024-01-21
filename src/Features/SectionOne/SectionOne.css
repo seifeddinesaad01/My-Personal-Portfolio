@@ -46,7 +46,7 @@
 .sectionOne__right h1 {
   align-self: flex-start;
   /* width: 19%; */
-  border-bottom: 3px solid #2F3D7E;
+  border-bottom: 3px solid hsla(272, 66%, 48%, 1);
   font-size: 1.4rem;
   font-weight: 600;
   /* margin-left: 2rem; */
@@ -109,7 +109,9 @@
 
 .sectionOne__btn {
   padding: 1rem 2rem;
-  background-color: #2F3D7E;
+  background: hsla(272, 66%, 48%, 1);
+
+  /* background-color: hsla(272, 66%, 48%, 1); */
   border-radius: 4px;
   cursor: pointer;
   color: #fff;

@@ -1,25 +1,17 @@
 /* Header.css */
 .header {
-  position: fixed;
+  /* position: fixed; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
   flex-wrap: nowrap;
   background-color: #efefef;
-
   transition: background-color 0.3s ease; /* Add transition for smooth effect */
-  
-
-}
-
-.fixed {
-  /* position: fixed; */
-  top: 0;
   width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box-shadow for separation */
-  background-color: #efefef; /* Set the background color when the header is fixed */
+
 }
+
 
 
 .logo {
@@ -56,7 +48,7 @@
 
 .nav-links a:hover {
   /* text-decoration: underline; */
-  color: #2F3D7E; /* Change the color when hovered over */
+  color: hsla(272, 66%, 48%, 1); /* Change the color when hovered over */
 }
 
 .icons-wrapper {
@@ -72,8 +64,8 @@
   }
 }
 
-.header_icons{
-  padding:  0.5rem ;
+.header_icons {
+  padding: 0.5rem;
   background-color: #ffff;
   border-radius: 50%;
   cursor: pointer;
@@ -81,10 +73,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
-.header_icons:hover{
-color:#2F3D7E;
+.header_icons:hover {
+  background-color: hsla(272, 66%, 48%, 1);
+  color: #fff;
 }
 /* Drawer style */
 .drawer {
@@ -100,8 +94,8 @@ color:#2F3D7E;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-    transform: translateX(-100%);  
-  transition:  0.3s ease-in-out;
+  transform: translateX(-100%);
+  transition: 0.3s ease-in-out;
   border-right: 3px solid red;
 }
 
@@ -118,12 +112,11 @@ color:#2F3D7E;
   flex-direction: column;
   gap: 2rem;
   align-items: flex-end;
-    /* transform: translateX(-100%);   */
-  transition:  0.3s ease-in-out;
+  /* transform: translateX(-100%);   */
+  transition: 0.3s ease-in-out;
   border-right: 1px solid rgb(206, 202, 202);
-
 }
-.drawer__header{
+.drawer__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -142,20 +135,19 @@ color:#2F3D7E;
 .drawer-links a {
   text-decoration: none;
   margin: 0.5em 0;
-  border-bottom: 2px solid #2F3D7E;
+  border-bottom: 2px solid hsla(272, 66%, 48%, 1);
   width: 80%;
   color: gray;
   padding-bottom: 0.5rem;
-
 }
 /* Show the drawer when it's open */
 .drawer.open {
   transform: translateX(0);
 }
 
-.active{
-  color: #2F3D7E !important;
-  border-bottom: 3px solid #2F3D7E;
+.active {
+  color: hsla(272, 66%, 48%, 1) !important;
+  border-bottom: 3px solid hsla(272, 66%, 48%, 1);
   padding-bottom: 0.5rem;
 }
 
@@ -171,4 +163,3 @@ color:#2F3D7E;
 .header_icons:hover {
   animation: rotate 0.3s linear 1; /* 1s duration, linear timing function, repeat 3 times */
 }
-

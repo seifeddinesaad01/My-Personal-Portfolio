@@ -63,11 +63,11 @@ const SectionTwo = () => {
                 paddingTop:"1rem"
               }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><FcIdea fontSize="2rem" color="#2f3d7e" />Quick & Visual Learner</p>
+                <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><FcIdea fontSize="2rem" color="hsla(272, 66%, 48%, 1)" />Quick & Visual Learner</p>
                 <p style={{ color: 'gray', fontSize: '1.1rem' }}>I am a very strong visual learner and am determined to solve problems and quickly find an effective solution.</p>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><FcIdea fontSize="2rem" color="#2f3d7e" />Effective Problem Solver</p>
+                <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><FcIdea fontSize="2rem" color="hsla(272, 66%, 48%, 1)" />Effective Problem Solver</p>
                 <p style={{ color: 'gray', fontSize: '1.1rem' }}>I have the capability to solve problems and determining the cause of the problem. Identifying, prioritizing, and selecting alternatives for a solution; and implementing a solution.</p>
               </div>
             </div>

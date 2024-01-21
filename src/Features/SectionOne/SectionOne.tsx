@@ -17,15 +17,15 @@ const SectionOne = () => {
         <h4>Let's work together to bring your ideas to life and create amazing software that makes a difference!</h4>
         <div className="sectionOne__categories">
           <div className="sectionOne__category">
-            <FaCode fontSize="3rem" color='#2F3D7E' />
+            <FaCode fontSize="3rem" color='hsla(272, 66%, 48%, 1)' />
             <p style={{ fontSize: "1.2rem", fontWeight: "600" }}>Coding</p>
           </div>
           <div className="sectionOne__category">
-            <MdDesignServices fontSize="3rem" color='#2F3D7E' />
+            <MdDesignServices fontSize="3rem" color='hsla(272, 66%, 48%, 1)' />
             <p style={{ fontSize: "1.2rem", fontWeight: "600" }}>Design</p>
           </div>
           <div className="sectionOne__category">
-            <SiTestinglibrary fontSize="3rem" color='#2F3D7E' />
+            <SiTestinglibrary fontSize="3rem" color='hsla(272, 66%, 48%, 1)' />
             <p style={{ fontSize: "1.2rem", fontWeight: "600" }}>Testing</p>
           </div>
         </div>

@@ -44,7 +44,7 @@
       font-weight: bolder;
   
       &:hover {
-        color: #2F3D7E;
+        color: hsla(272, 66%, 48%, 1);
       }
   
       i {

@@ -6,7 +6,7 @@
   width: 100%;
   min-height: 100vh;
   padding-top: 1rem;
-  /* width: 100%;  */
+  background-color: #efefef;
   gap: 2rem;
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
@@ -35,7 +35,7 @@
 }
 
 .sectionTwo__left h1 {
-  border-bottom: 3px solid #2f3d7e;
+  border-bottom: 3px solid hsla(272, 66%, 48%, 1);
   font-size: 1.4rem;
   font-weight: 600;
   /* text-align: left; */

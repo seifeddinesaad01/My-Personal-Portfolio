@@ -7,7 +7,7 @@ import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 
 import { GiSkullCrossedBones } from "react-icons/gi";
-import logo from "../../assets/logo1.png"
+import logo from "../../assets/logo2.png"
 const Header: React.FC = () => {
   const { width } = useWindow();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -35,13 +35,16 @@ const socialMedia= [
 ]
  const navLinkStyle = {
   textDecoration: 'none',
-  color: 'black',
+  // color: 'black',
 };
 
   return (
     <header className={`header fixed`}>
       <div className="logo">
-        <img src={logo} alt="logo" style={{width:'10rem'}}/>
+        {/* <img src={logo} alt="logo" style={{width:'10rem'}}/> */}
+        <h1 style={{
+          color: "#812bccff"
+        }}>Seif.Dev</h1>
       </div>
 
       {width > 765 ? (

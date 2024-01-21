@@ -3,7 +3,8 @@
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: #2f3d7e;
+  background-color: hsla(272, 66%, 48%, 1);
+
   width: 100%;
   color: #fff;
   flex-wrap: wrap;

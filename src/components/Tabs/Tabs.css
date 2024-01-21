@@ -28,12 +28,12 @@
 }
 
 .tab:hover {
-  color: #2f3d7e;
+  color: hsla(272, 66%, 48%, 1);
 }
 
 .tab.active {
-  background-color: #fff;
-  border-bottom: 3px solid #2f3d7e;
+  background-color: #efefef;
+  border-bottom: 3px solid hsla(272, 66%, 48%, 1);
 }
 
 .tab-content {
