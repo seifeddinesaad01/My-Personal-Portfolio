@@ -43,17 +43,17 @@ const Contact: React.FC = () => {
                     <div className='form__top'>
                         <div className="form-group">
                             <label htmlFor="fullName">Full Name:</label>
-                            <Field type="text" id="fullName" name="fullName" />
+                            <Field type="text" id="fullName" name="fullName" placeholder="Full name" required/>
                             {/* <ErrorMessage name="fullName" component="div" className="error" /> */}
                         </div>
                         <div className="form-group">
                             <label htmlFor="email">Email:</label>
-                            <Field type="email" id="email" name="email" />
+                            <Field type="email" id="email" name="email" placeholder="Email" required/>
                             {/* <ErrorMessage name="email" component="div" className="error" /> */}
                         </div>
                         <div className="form-group">
                             <label htmlFor="subject">Subject:</label>
-                            <Field type="text" id="subject" name="subject" />
+                            <Field type="text" id="subject" name="subject" placeholder="Subject" required/>
                             {/* <ErrorMessage name="subject" component="div" className="error" /> */}
                         </div>
 
@@ -61,7 +61,7 @@ const Contact: React.FC = () => {
 
                     <div className="form-group">
                         <label htmlFor="message">Message:</label>
-                        <Field as="textarea" id="message" name="message" />
+                        <Field as="textarea" id="message" name="message" placeholder="Message" required/>
                         {/* <ErrorMessage name="message" component="div" className="error" /> */}
                     </div>
 
