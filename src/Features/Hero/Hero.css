@@ -47,7 +47,7 @@
   width: 27rem;
   height: 30rem;
   border-radius: 2rem ;
-  /* border: 4px solid hsla(272, 66%, 48%, 1); */
+   border: 5px solid hsla(272, 66%, 48%, 1);
 }
 
 .hero__title {

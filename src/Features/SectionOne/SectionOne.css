@@ -118,12 +118,14 @@
   font-size: 1.2rem;
   font-weight: 550;
   border: none;
-  /* font-size: 1.2rem; */
   font-weight: 600;
+  border: 2px solid hsla(272, 66%, 48%, 1); 
+
 }
 
 .sectionOne__btn:hover {
-  background-color: #6380ff;
-  color: #fff;
-  transition: ease all 0.3s;
+  background-color: #fff;
+  color: hsla(272, 66%, 48%, 1);
+   border: 2px solid hsla(272, 66%, 48%, 1); 
+  transition: ease all 0.4s;
 }
