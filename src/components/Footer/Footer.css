@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  min-height: 20vh;
+  flex-direction: column;
   background-color: #efefef;
   width: 100%;
   color: black;

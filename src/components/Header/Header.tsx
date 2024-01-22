@@ -7,16 +7,7 @@ import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 
 import { GiSkullCrossedBones } from "react-icons/gi";
-import logo from "../../assets/logo2.png"
-const Header: React.FC = () => {
-  const { width } = useWindow();
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
-
-  const toggleDrawer = () => {
-    setIsDrawerOpen(!isDrawerOpen);
-  };
-const socialMedia= [
+export const socialMedia = [
   {
     id: 1,
     icon: <FaInstagram />,
@@ -33,10 +24,19 @@ const socialMedia= [
     url: 'https://twitter.com/Saif71564790',
   }
 ]
- const navLinkStyle = {
-  textDecoration: 'none',
-  // color: 'black',
-};
+const Header: React.FC = () => {
+  const { width } = useWindow();
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+
+  const toggleDrawer = () => {
+    setIsDrawerOpen(!isDrawerOpen);
+  };
+
+  const navLinkStyle = {
+    textDecoration: 'none',
+    // color: 'black',
+  };
 
   return (
     <header className='header'>
@@ -61,12 +61,12 @@ const socialMedia= [
             ))}
           </nav>
           <div className="icons-wrapper">
-            {socialMedia.map(socialMedia =>{
-                return <NavLink target="_blank" to={socialMedia.url} style={navLinkStyle} className="header_icons">
-                  {socialMedia.icon}
-                </NavLink>
+            {socialMedia.map(socialMedia => {
+              return <NavLink target="_blank" to={socialMedia.url} style={navLinkStyle} className="header_icons">
+                {socialMedia.icon}
+              </NavLink>
             })}
-           
+
           </div>
         </>
       ) : (

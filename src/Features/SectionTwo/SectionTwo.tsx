@@ -11,7 +11,6 @@ import { NavLink } from 'react-router-dom';
 const SectionTwo = () => {
   const navLinkStyle = {
     textDecoration: 'none',
-    color: 'white',
   };
   return (
     <div className="sectionTwo">
