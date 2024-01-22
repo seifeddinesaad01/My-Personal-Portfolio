@@ -39,7 +39,7 @@ const socialMedia= [
 };
 
   return (
-    <header className={`header fixed`}>
+    <header className='header'>
       <div className="logo">
         {/* <img src={logo} alt="logo" style={{width:'10rem'}}/> */}
         <h1 style={{

@@ -1,6 +1,7 @@
 /* Header.css */
 .header {
-  /* position: fixed; */
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -9,7 +10,7 @@
   background-color: #efefef;
   transition: background-color 0.3s ease; /* Add transition for smooth effect */
   width: 100%;
-
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 
