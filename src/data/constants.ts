@@ -37,12 +37,12 @@ export const sectionTwoInfo = [
 
 export const educationInfo = [
   {
-    position: "licence in computer science",
+    position: "Licentiate degree  in computer science",
     place: "ISIMM",
     date: "current",
   },
   {
-    position: "Baccalaureate in computer science",
+    position: "High school diploma",
     place: "Ouerdanine High School",
     date: "2022",
   },
@@ -77,7 +77,7 @@ export const projects = [
   {
     title: "Omnifood",
     imageSrc:"https://github.com/seifeddinesaad01/omnifood/blob/main/img/omnifood.png?raw=true",
-    description:"Omnifood a static website that i have created using HTML and CSS",
+    description:"Omnifood, a static website that i have created using HTML and CSS",
     githubLink: "https://github.com/seifeddinesaad01/omnifood",
     liveSiteLink: "https://dev-omnifood.netlify.app/",
   },

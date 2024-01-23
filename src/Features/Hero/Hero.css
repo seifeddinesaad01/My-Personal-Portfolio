@@ -47,7 +47,9 @@
   width: 27rem;
   height: 30rem;
   border-radius: 2rem ;
-   border: 5px solid hsla(272, 66%, 48%, 1);
+   /* border: 5px solid gray; */
+   box-shadow: 10px 10px 5px #888888;
+
    object-fit: cover;
 }
 

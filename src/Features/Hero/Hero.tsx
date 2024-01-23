@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../../assets/hero.jpeg';
+import heroImg from '../../assets/hero-PhotoRoom.png-PhotoRoom (2).png';
 import './Hero.css';
 import { NavLink } from 'react-router-dom';
 const Hero = () => {

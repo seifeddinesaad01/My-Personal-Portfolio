@@ -5,38 +5,45 @@ import { SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiJest } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
+import { TbBrandNextjs } from "react-icons/tb";
+
 export const skills = [
     {
         icon: <FaReact />,
         name: "React JS"
     },
     {
+        icon: <TbBrandNextjs />,
+        name: "Next JS"
+    },
+    {
         icon: <FaNode />,
         name: "Node JS"
     }, {
         icon: <FaHtml5 />,
-        name:"HTML"
-    }, 
+        name: "HTML"
+    },
     {
         icon: <IoLogoCss3 />,
-        name :"CSS"
+        name: "CSS"
     },
     {
         icon: <SiTypescript />,
-        name:"Typescript"
+        name: "Typescript"
     },
     {
-        icon:<IoLogoJavascript />,
-        name:"Javascript"
+        icon: <IoLogoJavascript />,
+        name: "Javascript"
     },
     {
         icon: <SiJest />,
-        name:"Jest JS"
+        name: "Jest JS"
     },
     {
-        icon:<FaGit />,
-        name:"Git"
-    }
+        icon: <FaGit />,
+        name: "Git"
+    },
+
 ]
 const Skills = () => {
     return (
@@ -44,13 +51,16 @@ const Skills = () => {
             <h1>My Tech Stack</h1>
             <p className='sub__title'>Technologies I’ve been working with recently.</p>
             <div className="icons__container">
-                {skills?.map((skill)=>{
+                {skills?.map((skill) => {
                     return <div className="skill">
                         <p className='skill__icon'>{skill?.icon}</p>
                         <p className='skill__name'>{skill?.name}</p>
                     </div>
                 })}
             </div>
+            
+
+
         </div>
     )
 }
