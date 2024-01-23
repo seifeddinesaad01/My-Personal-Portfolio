@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom';
 import { links } from '../../data/constants';
 import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
+import { RiMenu3Line } from "react-icons/ri";
+import { ImCross } from "react-icons/im";
 
 import { GiSkullCrossedBones } from "react-icons/gi";
 export const socialMedia = [
@@ -42,12 +44,10 @@ const Header: React.FC = () => {
     <header className='header'>
       <div className="logo">
         {/* <img src={logo} alt="logo" style={{width:'10rem'}}/> */}
-        <h1 style={{
-          color: "#812bccff"
-        }}>Seif.Dev</h1>
+        <h1 className='logo__text'>Seif.Dev</h1>
       </div>
 
-      {width > 765 ? (
+      {width > 900 ? (
         <>
           <nav className="nav-links">
             {links.map((link, index) => (
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
         </>
       ) : (
         <div className="menu-icon" onClick={toggleDrawer}>
-          &#9776;
+          <RiMenu3Line fontSize="2rem"/>
         </div>
       )}
 
@@ -79,8 +79,8 @@ const Header: React.FC = () => {
 
       <div className={!isDrawerOpen ? "drawer" : 'hiddenDrawer'}>
         <div className='drawer__header'>
-          <div className="logo">SEIF</div>
-          <div onClick={() => toggleDrawer()} style={{ cursor: "pointer" }}><GiSkullCrossedBones /></div>
+        <h1 className='logo__text'>Seif.Dev</h1>
+          <div onClick={() => toggleDrawer()} style={{ cursor: "pointer" }}><ImCross /></div>
         </div>
 
         <nav className="drawer-links">

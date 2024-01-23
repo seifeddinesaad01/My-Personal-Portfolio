@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../../assets/king123.jpg';
+import heroImg from '../../assets/hero.jpeg';
 import './Hero.css';
 import { NavLink } from 'react-router-dom';
 const Hero = () => {
@@ -9,10 +9,7 @@ const Hero = () => {
                 <div className="hero__info">
                     <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "flex-start" }}>
                         <h1 className='hero__title'>Hi, I'm Seif 👋</h1>
-                        <p style={{
-                            color: "gray",
-                            fontSize: "1.2rem"
-                        }}>I'm a front end developer (React.js & Next.js)
+                        <p className='hero__description'>I'm a front end developer (React.js & Next.js)
                         </p>
                     </div>
                     <div className="hero__buttons">

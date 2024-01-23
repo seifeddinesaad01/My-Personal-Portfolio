@@ -48,26 +48,32 @@
   height: 30rem;
   border-radius: 2rem ;
    border: 5px solid hsla(272, 66%, 48%, 1);
+   object-fit: cover;
 }
 
 .hero__title {
   font-size: 3rem;
-  /* border-bottom: 4px solid hsla(272, 66%, 48%, 1); */
   padding-right: 2rem;
   @media (max-width: 1200px) {
     font-size: 2rem;
   }
   @media (max-width: 1000px) {
     padding-right: 0rem;
+    text-align: center;
+    align-self: center;
   }
 }
 
+
 .hero__description {
   align-self: flex-start;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
+  color: gray;
   @media (max-width: 1000px) {
     align-self: center;
+    text-align: center;
+    font-size: 1.4rem;
   }
 }
 

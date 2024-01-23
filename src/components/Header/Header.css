@@ -20,12 +20,19 @@
   font-weight: bold;
 }
 
+.logo__text{
+  color: #812bccff;
+  @media (max-width: 900px) {
+    font-size: 2.5rem;
+  }
+}
+
 .menu-icon {
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: block;
   }
 }
@@ -89,7 +96,6 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  max-width: 300px;
   background-color: #fff;
   padding: 1em;
   display: flex;
@@ -97,7 +103,8 @@
   align-items: flex-end;
   transform: translateX(-100%);
   transition: 0.3s ease-in-out;
-  border-right: 3px solid red;
+  min-height: 100vh;
+
 }
 
 .hiddenDrawer {
@@ -105,17 +112,17 @@
   top: 0;
   left: 0;
   bottom: 0;
+  z-index: 999;
   width: 100%;
-  max-width: 300px;
   padding: 1em;
   display: flex;
   background-color: #fff;
   flex-direction: column;
   gap: 2rem;
   align-items: flex-end;
-  /* transform: translateX(-100%);   */
   transition: 0.3s ease-in-out;
   border-right: 1px solid rgb(206, 202, 202);
+  min-height: 100vh;
 }
 .drawer__header {
   display: flex;
@@ -128,7 +135,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   flex-direction: column;
 }
@@ -136,10 +143,11 @@
 .drawer-links a {
   text-decoration: none;
   margin: 0.5em 0;
-  border-bottom: 2px solid hsla(272, 66%, 48%, 1);
   width: 80%;
   color: gray;
   padding-bottom: 0.5rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
 /* Show the drawer when it's open */
 .drawer.open {
@@ -148,7 +156,7 @@
 
 .active {
   color: hsla(272, 66%, 48%, 1) !important;
-  border-bottom: 3px solid hsla(272, 66%, 48%, 1);
+  /* border-bottom: 3px solid hsla(272, 66%, 48%, 1); */
   padding-bottom: 0.5rem;
 }
 
