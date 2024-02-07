@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../../assets/hero-PhotoRoom.png-PhotoRoom (2).png';
+import heroImg from '../../assets/herohero.png';
 import './Hero.css';
 import { NavLink } from 'react-router-dom';
 const Hero = () => {
@@ -21,7 +21,7 @@ const Hero = () => {
                         </NavLink>
                     </div>
                     <div className="infos__box" style={{
-                        border:"2px solid #812bccff"
+                        border: "2px solid #812bccff"
                     }}>
                         <div className="info__box">
                             <p>2+</p>

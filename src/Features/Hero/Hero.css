@@ -44,11 +44,11 @@
   }
 }
 .hero__img {
-  width: 27rem;
-  height: 30rem;
+  width: 35rem;
+  height: 35rem;
   border-radius: 2rem ;
    /* border: 5px solid gray; */
-   box-shadow: 10px 10px 5px #888888;
+   /* box-shadow: 10px 10px 5px #888888; */
 
    object-fit: cover;
 }
