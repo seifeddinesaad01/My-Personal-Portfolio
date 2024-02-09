@@ -5,7 +5,6 @@ const Projects = () => {
     return (
         <div className='projects__conatiner'>
             <SectionThree />
-
         </div>
     )
 }

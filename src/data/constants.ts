@@ -54,7 +54,7 @@ export const projects = [
     description:
       "Complete marketplace built from scratch in Next.js 14 💻 ",
     imageSrc:projectImg,
-    githubLink: "https://github.com/seifeddinesaad01/youtube-clone",
+    githubLink: "https://github.com/seifeddinesaad01/The-Digital-Hippo",
     liveSiteLink: "empty",
   },
   {
