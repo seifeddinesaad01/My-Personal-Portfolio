@@ -7,3 +7,28 @@
     padding-top: 2rem;
     background-color: #efefef;
 }
+.sectionThree{
+    /* align-self: flex-start; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 80vh;
+    width: 90%;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #efefef;
+}
+.sectionThree h1{
+    border-bottom: 3px solid hsla(272, 66%, 48%, 1);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.sectionThree__bottom{
+    align-self: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    width: 100%;
+  
+}

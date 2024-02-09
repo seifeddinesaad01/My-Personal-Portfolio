@@ -1,12 +1,25 @@
-import React from 'react'
+import React from 'react';
 import "./Projects.css";
-import SectionThree from '../SectionThree/SectionThree';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import { projects } from '../../data/constants';
 const Projects = () => {
     return (
-        <div className='projects__conatiner'>
-            <SectionThree />
-        </div>
-    )
+        <div className="sectionThree">
+            <h1>Recent Projects</h1>
+            <div className="sectionThree__bottom">
+                {projects?.map((project) => {
+                    return <>
+                        <ProjectCard
+                            title={project.title}
+                            description={project?.description}
+                            imageSrc={project?.imageSrc} // Replace with your actual image source
+                            githubLink={project?.githubLink}
+                            liveSiteLink={project?.liveSiteLink}
+                        />
+                    </>
+                })}
+            </div>
+        </div>)
 }
 
 export default Projects

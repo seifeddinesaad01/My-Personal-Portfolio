@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Hero from '../Hero/Hero'
 import SectionTwo from '../SectionTwo/SectionTwo'
 import SectionOne from '../SectionOne/SectionOne'
 import './Home.css'
-import SectionThree from '../SectionThree/SectionThree';
-import Spinner from "../../components/Spinner"
+import Projects from '../Projects/Projects'
 const Home = () => {
   return (
     <>
@@ -12,7 +11,7 @@ const Home = () => {
         <Hero />
         <SectionOne />
         <SectionTwo />
-        <SectionThree />
+        <Projects />
       </div>
     </>
 
