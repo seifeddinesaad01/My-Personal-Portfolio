@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Skills.css";
 import { FaReact, FaNode, FaHtml5, FaGit } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
@@ -45,24 +45,42 @@ export const skills = [
     },
 
 ]
-const Skills = () => {
-    return (
-        <div className='skills__container'>
-            <div className='skills__left'>
-                <h1>My Tech Stack</h1>
-                <p className='sub__title'>Technologies I’ve been working with recently.</p>
-                <div className="icons__container">
-                    {skills?.map((skill) => {
-                        return <div className="skill">
-                            <p className='skill__icon'>{skill?.icon}</p>
-                            <p className='skill__name'>{skill?.name}</p>
-                        </div>
-                    })}
-                </div>
-            </div>
 
-            <img src={skillsImg} alt="skills" className='skills__hero'/>
-        </div>
+
+const Skills = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 1000); // Simulating loading time with setTimeout. Replace this with your actual loading logic.
+
+        return () => clearTimeout(timer);
+    }, []);
+    return (
+        <>
+            {loading ?
+                <p>Loading...</p>
+                :
+                <div className='skills__container'>
+                    <div className='skills__left'>
+                        <h1>My Tech Stack</h1>
+                        <p className='sub__title'>Technologies I’ve been working with recently.</p>
+                        <div className="icons__container">
+                            {skills?.map((skill) => {
+                                return <div className="skill">
+                                    <p className='skill__icon'>{skill?.icon}</p>
+                                    <p className='skill__name'>{skill?.name}</p>
+                                </div>
+                            })}
+                        </div>
+                    </div>
+
+                    <img src={skillsImg} alt="skills" className='skills__hero' />
+                </div>
+            }
+        </>
+
     )
 }
 

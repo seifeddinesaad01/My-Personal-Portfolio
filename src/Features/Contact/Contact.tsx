@@ -1,5 +1,5 @@
 // Form.tsx
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import './Contact.css';
@@ -31,7 +31,21 @@ const onSubmit = (values: FormValues) => {
 };
 
 const Contact: React.FC = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 1000); // Simulating loading time with setTimeout. Replace this with your actual loading logic.
+
+        return () => clearTimeout(timer);
+    }, []);
     return (
+        <> 
+        {loading 
+        ? 
+        <p>Loading ...</p>
+        :
         <div className="form-container">
             <h1>Contact Form</h1>
             <Formik
@@ -69,6 +83,10 @@ const Contact: React.FC = () => {
                 </Form>
             </Formik>
         </div>
+    }
+        
+        </>
+
     );
 };
 
