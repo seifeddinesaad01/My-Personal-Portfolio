@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./About.css";
 import InfoCard from '../../components/InfoCard/InfoCard';
 import { educationInfo, sectionTwoInfo } from '../../data/constants';
+import Spinner from '../../components/Spinner/Spinner';
 const About = () => {
     const [loading, setLoading] = useState(true);
 
@@ -16,7 +17,7 @@ const About = () => {
     return (
         <>
             {loading ?
-                <p>Loading...</p>
+                <Spinner />
                 :
                 <div className="about__container">
                     <div className="about__top">

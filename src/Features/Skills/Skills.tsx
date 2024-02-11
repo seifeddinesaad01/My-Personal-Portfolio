@@ -7,6 +7,7 @@ import { SiJest } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
 import { TbBrandNextjs } from "react-icons/tb";
 import skillsImg from "../../assets/skills.png"
+import Spinner from '../../components/Spinner/Spinner';
 export const skills = [
     {
         icon: <FaReact />,
@@ -60,7 +61,7 @@ const Skills = () => {
     return (
         <>
             {loading ?
-                <p>Loading...</p>
+                <Spinner />
                 :
                 <div className='skills__container'>
                     <div className='skills__left'>

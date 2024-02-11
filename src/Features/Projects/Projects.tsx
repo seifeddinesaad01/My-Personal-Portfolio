@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./Projects.css";
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import { projects } from '../../data/constants';
+import Spinner from '../../components/Spinner/Spinner';
 const Projects = () => {
     const [loading, setLoading] = useState(true);
 
@@ -15,7 +16,7 @@ const Projects = () => {
     return (
         <>
             {loading ?
-                <p>Loading....</p>
+                <Spinner />
                 :
                 <div className="sectionThree">
                     <h1>Recent Projects</h1>

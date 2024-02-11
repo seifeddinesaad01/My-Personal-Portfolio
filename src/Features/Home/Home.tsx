@@ -4,6 +4,7 @@ import SectionTwo from '../SectionTwo/SectionTwo'
 import SectionOne from '../SectionOne/SectionOne'
 import './Home.css'
 import Projects from '../Projects/Projects'
+import Spinner from '../../components/Spinner/Spinner'
 const Home = () => {
   const [loading, setLoading] = useState(true);
 
@@ -17,7 +18,8 @@ const Home = () => {
   return (
     <>
       {loading ?
-        <p>Loading...</p> :
+        <Spinner />
+        :
         <div className='home__container'>
           <Hero />
           <SectionOne />

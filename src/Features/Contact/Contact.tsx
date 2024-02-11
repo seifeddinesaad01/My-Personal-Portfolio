@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Formik, Field, Form } from 'formik';
 import * as Yup from 'yup';
 import './Contact.css';
+import Spinner from '../../components/Spinner/Spinner';
 
 interface FormValues {
     fullName: string;
@@ -44,7 +45,7 @@ const Contact: React.FC = () => {
         <> 
         {loading 
         ? 
-        <p>Loading ...</p>
+        <Spinner />
         :
         <div className="form-container">
             <h1>Contact Form</h1>
