@@ -50,6 +50,13 @@ export const educationInfo = [
 
 export const projects = [
   {
+    title: "Golobe",
+    imageSrc:"https://github.com/seifeddinesaad01/Golobe-Travel-agency-website/blob/master/public/readMe/image1.png?raw=true",
+    description:"Golobe, a travel agency website that i have created using Next js, Typescript and Tailwind CSS",
+    githubLink: "https://github.com/seifeddinesaad01/Golobe-Travel-agency-website",
+    liveSiteLink: "empty",
+  },
+  {
     title: "The Digital Hippo",
     description:
       "Complete marketplace built from scratch in Next.js 14 💻 ",
