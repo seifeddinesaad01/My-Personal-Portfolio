@@ -1,10 +1,10 @@
 .skills__container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   gap: 1rem;
-  width: 80%;
+  width: 85%;
   min-height: 80vh;
 }
 
@@ -48,4 +48,36 @@
   position: relative;
   width: 200px;
   height: 200px;
+}
+
+.skills__hero{
+  width: 500px;
+}
+
+@media screen and (max-width: 1020px) {
+  .skills__hero {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .skills__hero {
+    display: none;
+  }
+}
+
+.skills__left{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin:2rem 0rem;
+}
+@media screen and (max-width: 900px) {
+  .skills__left {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .sub__title{
+    text-align: center;
+  }
 }
