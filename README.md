@@ -1,4 +1,8 @@
 # My Personal Portfolio
-![PersonalPortfolio](./public/ReadmeFile/image1.jpg "")
-![PersonalPortfolio](./public/ReadmeFile/image3.jpg "")
-![PersonalPortfolio](./public/ReadmeFile/image.jpg "")
+![PersonalPortfolio](./public/ReadmeFile/1.png "")
+![PersonalPortfolio](./public/ReadmeFile/2.png "")
+![PersonalPortfolio](./public/ReadmeFile/3.png "")
+![PersonalPortfolio](./public/ReadmeFile/4.png "")
+![PersonalPortfolio](./public/ReadmeFile/1.png "")
+![PersonalPortfolio](./public/ReadmeFile/7.png "")
+![PersonalPortfolio](./public/ReadmeFile/8.png "")
