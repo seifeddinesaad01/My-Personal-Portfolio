@@ -7,8 +7,6 @@ import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import { RiMenu3Line } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
-
-import { GiSkullCrossedBones } from "react-icons/gi";
 export const socialMedia = [
   {
     id: 1,
@@ -26,7 +24,7 @@ export const socialMedia = [
     url: 'https://twitter.com/Saif71564790',
   }
 ]
-const Header: React.FC = () => {
+const Header = () => {
   const { width } = useWindow();
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
@@ -37,13 +35,11 @@ const Header: React.FC = () => {
 
   const navLinkStyle = {
     textDecoration: 'none',
-    // color: 'black',
   };
 
   return (
     <header className='header'>
       <div className="logo">
-        {/* <img src={logo} alt="logo" style={{width:'10rem'}}/> */}
         <h1 className='logo__text'>Seif.Dev</h1>
       </div>
 
@@ -71,7 +67,7 @@ const Header: React.FC = () => {
         </>
       ) : (
         <div className="menu-icon" onClick={toggleDrawer}>
-          <RiMenu3Line fontSize="2rem"/>
+          <RiMenu3Line fontSize="1.6rem" />
         </div>
       )}
 
@@ -79,7 +75,7 @@ const Header: React.FC = () => {
 
       <div className={!isDrawerOpen ? "drawer" : 'hiddenDrawer'}>
         <div className='drawer__header'>
-        <h1 className='logo__text'>Seif.Dev</h1>
+          <h1 className='logo__text'>Seif.Dev</h1>
           <div onClick={() => toggleDrawer()} style={{ cursor: "pointer" }}><ImCross /></div>
         </div>
 

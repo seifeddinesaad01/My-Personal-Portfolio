@@ -22,9 +22,9 @@ const Home = () => {
         :
         <div className='home__container'>
           <Hero />
-          <SectionOne />
-          <SectionTwo />
-          <Projects />
+           <SectionOne />
+           <SectionTwo />
+          <Projects />  
         </div>
       }
 

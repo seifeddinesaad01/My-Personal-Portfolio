@@ -14,8 +14,8 @@ function App() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundColor: "#efefef" }}>
       <Header />
-      <Outlet />
-      <Footer />
+       <Outlet />
+      {/* <Footer />  */}
     </div>
   );
 }
