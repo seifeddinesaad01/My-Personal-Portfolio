@@ -10,11 +10,13 @@ function App() {
       navigate('/home')
     }
   }, []);
-  
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundColor: "#efefef" }}>
       <Header />
-       <Outlet />
+      <div className='layout'>
+        <Outlet />
+      </div>
       {/* <Footer />  */}
     </div>
   );

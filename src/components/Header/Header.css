@@ -10,10 +10,21 @@
   background-color: #efefef;
   transition: background-color 0.3s ease; /* Add transition for smooth effect */
   width: 100%;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add box shadow */
-  height: 15vh;
-  padding-inline: 2rem;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); Add box shadow */
+  height: 10vh;
+  padding: 2rem 10rem;
+}
 
+@media (max-width: 1200px) {
+  .header {
+    padding-inline: 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    padding-inline: 2.5rem;
+  }
 }
 
 

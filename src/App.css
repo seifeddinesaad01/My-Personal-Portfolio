@@ -5,3 +5,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.layout{
+  padding-inline: 8rem;
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    padding-inline: 3.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .layout {
+    padding-inline: 0rem;
+  }
+}

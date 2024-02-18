@@ -8,7 +8,7 @@ const Hero = () => {
         <div className='hero__section'>
             <div className="hero__left">
                 <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "flex-start" }}>
-                    <h1 className='hero__title'>Hi, I'm SEIF 👋</h1>
+                    <h1 className='hero__title'>Hi, I'm Seif 👋</h1>
                     <p className='hero__description'>Experienced Frontend Developer, delivering dynamic and user-friendly web
                         applications with a focus on clean and efficient code.
                     </p>
