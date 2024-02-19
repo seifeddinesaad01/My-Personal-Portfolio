@@ -4,7 +4,7 @@
   align-items: center;
   flex-direction: row;
   gap: 1rem;
-  width: 85%;
+  width: 100%;
   min-height: 80vh;
 }
 
@@ -50,34 +50,32 @@
   height: 200px;
 }
 
-.skills__hero{
-  width: 500px;
+.skills__hero {
+  width: 80%;
+  height: 80%;
 }
 
-@media screen and (max-width: 1020px) {
-  .skills__hero {
-    width: 400px;
-  }
-}
-@media screen and (max-width: 900px) {
-  .skills__hero {
-    display: none;
-  }
-}
-
-.skills__left{
+.skills__left {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin:2rem 0rem;
+  margin: 2rem 0rem;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
   .skills__left {
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  .sub__title{
+  .sub__title {
     text-align: center;
+  }
+}
+
+.skills__hero__img {
+  width: 100%;
+
+  @media (max-width: 1000px) {
+    display: none;
   }
 }

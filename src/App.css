@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.layout{
+.layout {
   padding-inline: 8rem;
 }
 
@@ -20,5 +20,23 @@
 @media (max-width: 1000px) {
   .layout {
     padding-inline: 0rem;
+  }
+}
+.custom__layout {
+  padding-inline: 10rem;
+  width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+  .custom__layout {
+    margin-top: 2rem;
+    padding-inline: 3.2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .custom__layout {
+    padding-inline: 2rem;
   }
 }

@@ -18,7 +18,10 @@ function App() {
         <div className='layout'>
           <Outlet />
         </div> :
-        <Outlet />
+        <div className='custom__layout'>
+          <Outlet />
+
+        </div>
 
       }
 

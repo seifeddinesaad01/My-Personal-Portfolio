@@ -23,9 +23,10 @@
   border-bottom: 3px solid hsla(272, 66%, 48%, 1);
   font-size: 1.4rem;
   font-weight: 600;
+  margin-top: 2rem;
+
   @media (max-width: 600px) {
     align-self: center;
-    margin-top: 1rem;
   }
 }
 
