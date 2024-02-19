@@ -16,7 +16,7 @@ const Footer = () => {
         })}
 
       </div>
-      <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", width: "100%" }}>
+      <div className='footer__bottom'>
         <p>© Copyright {currentYear} <span className='myName'>Seif Eddine Saad</span></p>
         <p>saadseif304@gmail.com</p>
       </div>

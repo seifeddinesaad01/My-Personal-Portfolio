@@ -9,6 +9,8 @@
   color: black;
   flex-wrap: wrap;
   border-top: 1px solid rgb(182, 182, 182);
+  padding: 1rem;
+  gap: 1rem;
 }
 
 .footer p {
@@ -24,4 +26,19 @@
   color: black;
   border-bottom: 4px solid hsla(272, 66%, 48%, 1);
   padding-inline: 1rem;
+  @media (max-width: 600px) {
+    border-bottom: none;
+  }
 }
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
