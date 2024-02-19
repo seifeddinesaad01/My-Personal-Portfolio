@@ -10,14 +10,19 @@ function App() {
       navigate('/home')
     }
   }, []);
-
+  const pathname = window.location.pathname;
   return (
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', backgroundColor: "#efefef" }}>
       <Header />
-      <div className='layout'>
+      {pathname === "/home" ?
+        <div className='layout'>
+          <Outlet />
+        </div> :
         <Outlet />
-      </div>
-      {/* <Footer />  */}
+
+      }
+
+      <Footer />
     </div>
   );
 }

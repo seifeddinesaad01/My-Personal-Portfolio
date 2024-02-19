@@ -18,6 +18,9 @@
   width: 80%;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 }
 
 .sectionOne__right {
@@ -27,8 +30,8 @@
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
-  @media (max-width: 1238px) {
-    align-items: center;
+  @media (max-width: 600px) {
+     align-items: center; 
   }
 }
 
@@ -41,6 +44,7 @@
     min-height: 55vh;
     max-width: 27rem;
   }
+
 }
 
 .sectionOne__right h1 {
@@ -50,17 +54,17 @@
   font-size: 1.4rem;
   font-weight: 600;
   /* margin-left: 2rem; */
-  @media (max-width: 900px) {
-    align-self: center;
+  @media (max-width: 600px) {
+     align-self: center; 
   }
 }
 .sectionOne__right h4 {
   font-size: 2rem;
   width: 90%;
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     font-size: 1.5rem;
-    align-self: center;
-    text-align: center;
+     align-self: center;
+    text-align: center; 
   }
 }
 
@@ -71,9 +75,9 @@
   gap: 1rem;
   width: 100%;
   align-self: flex-start;
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     align-self: center;
-    justify-content: center;
+    justify-content: center; 
   }
   @media (max-width: 900px) {
     flex-wrap: wrap;
@@ -99,10 +103,10 @@
 .sectionOne__text {
   color: gray;
   font-size: 1.4rem;
-  @media (max-width: 900px) {
+  @media (max-width: 600px) {
     font-size: 1.2rem;
-    align-self: center;
-    text-align: center;
+     align-self: center;
+    text-align: center; 
   }
 }
 
@@ -118,6 +122,7 @@
   border: none;
   font-weight: 600;
   border: 2px solid hsla(272, 66%, 48%, 1);
+
 }
 
 .sectionOne__btn:hover {

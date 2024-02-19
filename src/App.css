@@ -12,6 +12,7 @@
 
 @media (max-width: 1200px) {
   .layout {
+    margin-top: 2rem;
     padding-inline: 3.2rem;
   }
 }
