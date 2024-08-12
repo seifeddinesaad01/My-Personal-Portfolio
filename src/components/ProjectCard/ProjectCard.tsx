@@ -2,6 +2,8 @@ import React from 'react';
 import "./ProjectCard.css";
 import { FaGithub } from "react-icons/fa";
 import { MdLiveTv } from "react-icons/md";
+import "./ProjectCard.css"
+import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
   title: string;
@@ -19,11 +21,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   liveSiteLink,
 }) => {
   return (
-    <div className="project-card">
-      <img className="project-image" src={imageSrc} alt={title} />
-      <div className="project-details">
-        <h3 className="project-title">{title}</h3>
-        <p className="project-description">{description}</p>
+    <div className="card" style={{
+      backgroundImage: `url(${imageSrc})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      objectFit:"cover"
+  
+    }}>
+      <div className="card-content">
+        <h2 className="card-title">{title}</h2>
+        <p className="card-body">
+          {description}
+        </p>
         <div className="project-links">
           <a href={githubLink} target="_blank" rel="noopener noreferrer"
             style={{

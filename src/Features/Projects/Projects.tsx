@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Projects.css";
-import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import  ProjectCard  from '../../components/ProjectCard/ProjectCard';
 import { projects } from '../../data/constants';
 import Spinner from '../../components/Spinner/Spinner';
 const Projects = () => {
@@ -18,7 +18,9 @@ const Projects = () => {
             {loading ?
                 <Spinner />
                 :
-                <div className="sectionThree">
+                <div className="sectionThree" style={{
+                    marginBottom:"2rem"
+                }}>
                     <h1>Recent Projects</h1>
                     <div className="sectionThree__bottom">
                         {projects?.map((project) => {
