@@ -25,8 +25,7 @@ const SectionTwo = () => {
           className='sectionOne__btn'
           target="_blank"
           style={navLinkStyle}
-          to="https://www.pdffiller.com/jsfiller-desk12/?flat_pdf_quality=high&isShareViaLink=1&lang=en&projectId=1427776696&loader=tips&MEDIUM_PDFJS=true&PAGE_REARRANGE_V2_MVP=true&richTextFormatting=true&isPageRearrangeV2MVP=true&jsf-page-rearrange-v2=true&LATEST_PDFJS=true&jsf-document-scroll-zoom=true&jsf-redesign-full=true&jsf-dss-v2=false&routeId=aef620af9c57592a25a279bda891ef42#96ed4bc2ef20485aa203323541c38707">
-          See Resume
+          to="https://files.fm/u/xn78zngpd2#/view/9xbj42g5r3" >
         </NavLink>
       </div>
       <div className="sectionTwo__right">
@@ -59,7 +58,7 @@ const SectionTwo = () => {
                 alignItems: "flex-start",
                 flexDirection: 'column',
                 gap: '0.5rem',
-                paddingTop:"1rem"
+                paddingTop: "1rem"
               }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><FcIdea fontSize="2rem" color="hsla(272, 66%, 48%, 1)" />Quick & Visual Learner</p>

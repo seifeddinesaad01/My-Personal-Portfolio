@@ -7,11 +7,13 @@ import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import { RiMenu3Line } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
+import { FaGithub } from "react-icons/fa";
+
 export const socialMedia = [
   {
     id: 1,
-    icon: <FaInstagram />,
-    url: 'https://www.instagram.com/saifeddine.sd/'
+    icon: <FaGithub />,
+    url: 'https://github.com/seifeddinesaad01'
   },
   {
     id: 2,

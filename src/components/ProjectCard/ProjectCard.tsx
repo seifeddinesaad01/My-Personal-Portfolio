@@ -3,7 +3,6 @@ import "./ProjectCard.css";
 import { FaGithub } from "react-icons/fa";
 import { MdLiveTv } from "react-icons/md";
 import "./ProjectCard.css"
-import { Link } from 'react-router-dom';
 
 interface ProjectCardProps {
   title: string;
