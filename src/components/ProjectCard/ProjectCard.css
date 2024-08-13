@@ -6,7 +6,6 @@
   overflow: hidden;
 }
 
-
 .card-content {
   --padding: 1.5rem;
   padding: var(--padding);
@@ -72,7 +71,7 @@
   }
 }
 
-.button {
+/* .button {
   cursor: pointer;
   display: inline-block;
   text-decoration: none;
@@ -80,12 +79,12 @@
   background-color: var(--clr-accent-400);
   padding: 0.5em 1.25em;
   border-radius: 0.25rem;
-}
+} */
 
-.button:hover,
+/* .button:hover,
 .button:focus {
   background-color: var(--clr-neutral-100);
-}
+} */
 
 .card-body {
   color: rgb(255, 255, 255/0.85);
@@ -105,8 +104,8 @@
 
 .project-links {
   margin-top: 16px;
-display: flex;
-gap: 1rem;
+  display: flex;
+  gap: 1rem;
   a {
     display: block;
     margin-bottom: 8px;

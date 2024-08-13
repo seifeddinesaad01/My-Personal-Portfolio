@@ -22,10 +22,11 @@ const SectionTwo = () => {
           One of my favorite activities is to educate and mentor others in the field to fulfill their potential and deepen my knowledge. You can find more about this on my CV
         </p>
         <NavLink
-          className='sectionOne__btn'
+          className='resume_btn'
           target="_blank"
           style={navLinkStyle}
           to="https://files.fm/u/xn78zngpd2#/view/9xbj42g5r3" >
+            See Resume
         </NavLink>
       </div>
       <div className="sectionTwo__right">

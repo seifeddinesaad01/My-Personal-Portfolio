@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import "./Skills.css";
 import { FaReact, FaNode, FaHtml5, FaGit } from "react-icons/fa";
-import { SiTypescript } from "react-icons/si";
+import { SiTypescript, SiRemix } from "react-icons/si";
+
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiJest } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandThreejs } from "react-icons/tb";
 import skillsImg from "../../assets/skills.png"
 import Spinner from '../../components/Spinner/Spinner';
 export const skills = [
@@ -18,15 +19,17 @@ export const skills = [
         name: "Next JS"
     },
     {
-        icon: <FaNode />,
-        name: "Node JS"
-    }, {
-        icon: <FaHtml5 />,
-        name: "HTML"
+        icon:<TbBrandThreejs />,
+        name:"Three JS"
     },
     {
-        icon: <IoLogoCss3 />,
-        name: "CSS"
+        icon: <SiRemix />,
+        name:"Remix JS"
+    }
+    ,
+    {
+        icon: <FaNode />,
+        name: "Node JS"
     },
     {
         icon: <SiTypescript />,
@@ -46,7 +49,14 @@ export const skills = [
     },
 
 ]
-
+// {
+//     icon: <FaHtml5 />,
+//     name: "HTML"
+// },
+// {
+//     icon: <IoLogoCss3 />,
+//     name: "CSS"
+// },
 
 const Skills = () => {
     const [loading, setLoading] = useState(true);
@@ -76,10 +86,9 @@ const Skills = () => {
                             })}
                         </div>
                     </div>
-                    <div className='skills__hero__img'>
+                    {/* <div className='skills__hero__img'>
                         <img src={skillsImg} alt="skills" className='skills__hero' />
-
-                    </div>
+                    </div> */}
                 </div>
             }
         </>

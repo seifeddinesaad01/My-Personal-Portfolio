@@ -69,3 +69,26 @@
     text-align: center;
   }
 }
+
+.resume_btn {
+  padding: 1rem 2rem;
+  background: hsla(272, 66%, 48%, 1);
+  /* background-color: hsla(272, 66%, 48%, 1); */
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 550;
+  border: none;
+  font-weight: 600;
+  border: 2px solid hsla(272, 66%, 48%, 1);
+  cursor: pointer;
+  
+}
+
+.resume_btn:hover {
+  background-color: #fff;
+  color: hsla(272, 66%, 48%, 1);
+  border: 2px solid hsla(272, 66%, 48%, 1);
+  transition: ease all 0.4s;
+}

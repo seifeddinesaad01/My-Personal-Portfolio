@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 import useWindow from '../../utils/useWindow';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { links } from '../../data/constants';
 import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
@@ -42,7 +42,11 @@ const Header = () => {
   return (
     <header className='header'>
       <div className="logo">
-        <h1 className='logo__text'>Seif.Dev</h1>
+        <h1 className='logo__text'>
+          <Link to="/home">
+            Seif.Dev
+          </Link>
+        </h1>
       </div>
 
       {width > 900 ? (

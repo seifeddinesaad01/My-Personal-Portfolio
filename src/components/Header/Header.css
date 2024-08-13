@@ -40,6 +40,12 @@
     font-size: 2.5rem;
   }
 }
+.logo__text a{
+  all: unset;
+  cursor: pointer;
+}
+
+
 
 .menu-icon {
   font-size: 1.5rem;

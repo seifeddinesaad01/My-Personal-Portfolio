@@ -77,6 +77,10 @@
   flex-wrap: wrap;
 }
 
+.hero__buttons a{
+  all: unset
+}
+
 .hero__btn {
   padding: 1rem 2rem;
   background-color: hsla(272, 66%, 48%, 1);
