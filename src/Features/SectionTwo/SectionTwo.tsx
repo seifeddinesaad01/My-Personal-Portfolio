@@ -63,7 +63,7 @@ const SectionTwo = () => {
               }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><FcIdea fontSize="2rem" color="hsla(272, 66%, 48%, 1)" />Quick & Visual Learner</p>
-                <p style={{ color: 'gray', fontSize: '1.1rem' }}>I am a very strong visual learner and am determined to solve problems and quickly find an effective solution.</p>
+                <p style={{ color: 'gray', fontSize: '1.1rem' }}>I am a strong visual learner, determined to solve problems and quickly find effective solutions .</p>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 <p style={{ display: "flex", justifyContent: "flex-start", alignItems: 'center', gap: '1rem', fontWeight: '600' }}><FcIdea fontSize="2rem" color="hsla(272, 66%, 48%, 1)" />Effective Problem Solver</p>

@@ -59,14 +59,14 @@ export const projects = [
   {
     title: "The Digital Hippo",
     description:
-      "Complete marketplace built from scratch in Next.js 14 💻 ",
+      "Complete marketplace built from scratch using Next.js 14 💻 ",
     imageSrc:projectImg,
     githubLink: "https://github.com/seifeddinesaad01/The-Digital-Hippo",
     liveSiteLink: "empty",
   },
   {
     title: "MOVIX APP",
-    description: "Discover and showcase the best movies with Movix app",
+    description: "Movix app is a website that showcases movies and TV shows.",
     imageSrc:
       "https://github.com/seifeddinesaad01/MOVIX-APP/raw/master/public/overview.png",
     githubLink: "https://github.com/seifeddinesaad01/MOVIX-APP",
